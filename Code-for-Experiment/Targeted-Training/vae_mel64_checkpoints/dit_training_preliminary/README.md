@@ -1,1 +1,0 @@
-Preliminary results from training a Diffusion Transformer (DiT) on the output of the 64-dim Mel-VAE.

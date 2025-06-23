@@ -1,1 +1,0 @@
-Contains post-training weights for a VAE model that uses a 64-dimension Mel spectrogram representation.
