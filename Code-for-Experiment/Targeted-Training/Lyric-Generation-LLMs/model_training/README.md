@@ -1,0 +1,1 @@
+Core scripts for training the Large Language Models for lyric generation.

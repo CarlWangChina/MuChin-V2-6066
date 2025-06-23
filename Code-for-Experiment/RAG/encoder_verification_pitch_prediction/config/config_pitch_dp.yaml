@@ -1,0 +1,74 @@
+data:
+  pitch_start: &pitch_start 21
+  vocab_size: &vocab 88 # 87 pitches(range(21, 108)) + 1 non-onset label
+  section_len: 8
+  freq: 75
+  path: "./data"
+  representation: "pitch_onset"
+  train:
+    proportion: 0.8
+    batch_size: 2400 # T4上最多应该能跑到batch_size=20
+    num_workers: 8
+    shuffle: True
+    drop_last: True
+  valid:
+    proportion: 0.1
+    batch_size: 2400
+    num_workers: 8
+    shuffle: False
+    drop_last: True
+  test:
+    proportion: 0.1
+    batch_size: 1
+    num_workers: 4
+    shuffle: False
+    drop_last: True
+model:
+  name: "Tokens2PitchOnsetModel"
+  vocab_size: 8000
+  embed_size: &embed 1024
+  embedding:
+    model: embedding
+    path: ./melody_cluster.joblib # optional, provided if model == cluster
+  encoder:
+    model: "TrmEncoder"
+    d_model: *embed  # 引用embed_size的值
+    nhead: 8
+    hidden_size: 2048
+    dropout: 0.1
+    num_layers: 6
+  decoder:
+    model: "DenseDecoder"
+    input_size: *embed  # 引用embed_size的值
+    hidden_size: 1024
+    output_size: *vocab  # 引用vocab_size的值
+    num_layers: 1
+    dropout: 0.1
+train:
+  device: "cuda:0"
+  device_ids: [0, 1, 2, 3, 4, 5, 6, 7]
+  loss_fn: "CrossEntropyLoss"
+  require_loss: 0 # 0: pitch, 1: onset, 2: pitch + onset
+  smooth: 0.0
+  optimizer: "Adam"
+  scheduler: # TODO: 这里应该像model一样设置name
+    warmup: False
+    d_model: *embed
+    warmup_steps: 1500 # 4000 in Attention is All You Need
+    step_size: 100
+    gamma: 1
+  learning_rate: 1.0e-4 # 1 if warmup as Attention is All You Need else 1.0e-5
+  max_epoch: 10000
+  early_stop: 10000
+  use_loss_weights: True
+  vocab_size: *vocab
+  # zero_weight: 0.02
+  # 计算损失时设置0的权重(其他位置权重为1)
+  # 解决0太多的问题，这个应该要根据数据集定
+  pitch_start: *pitch_start
+  is_save: True
+  save_best: True
+  save_path: "./model_save/pitch_model_240124_dp.pth"
+  predict_thresh: &thresh null
+metrics:
+  threshold: *thresh

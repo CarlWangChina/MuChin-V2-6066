@@ -1,0 +1,1 @@
+A cache of preprocessed descriptive texts. These can be used to re-generate vector embeddings if the CLAP model weights are updated.

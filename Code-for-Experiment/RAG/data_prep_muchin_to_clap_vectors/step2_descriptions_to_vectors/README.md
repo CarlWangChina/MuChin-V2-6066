@@ -1,0 +1,1 @@
+This script converts the generated English descriptive texts into vector embeddings using the CLAP model.

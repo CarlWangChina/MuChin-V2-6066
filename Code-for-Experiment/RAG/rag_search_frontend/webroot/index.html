@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>向量搜索</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="row clearfix">
+                    <div class="col-md-2 column">
+                    </div>
+                    <div class="col-md-6 column">
+                        <h2>向量搜索</h2>
+                        <label for="tableName">搜索方式:</label>
+                        <select id="tableName">
+                            <option value="cb_collect_full">全曲(cb)</option>
+                            <option value="cb_collect_lrc_rob">歌词(cb)</option>
+                        </select>
+                        <br><br>
+                        <label for="searchPrompt">prompt:(每行一个，单独进行搜索)</label>
+                        <br>
+                        <textarea id="searchPrompt" placeholder="prompt" style="width: 100%;"></textarea>
+                        <br>
+                        <label for="translation">自动翻译</label>
+                        <input type="checkbox" id="translation" checked="true">
+                        <br>
+                        <label for="mixSearch">合并搜索</label>
+                        <input type="checkbox" id="mixSearch" checked="true">
+                        <br>
+                        <button onclick="searchFiles()">Search</button>
+                        <br><br>
+                        <div id="linksContainer"></div>
+                    </div>
+                    <div class="col-md-4 column" id="lrc_group">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function searchFiles() {
+            var tableName = document.getElementById("tableName").value;
+            var searchPrompt = document.getElementById("searchPrompt").value.trim();
+            var translation = document.getElementById("translation").checked;
+            var mixSearch = document.getElementById("mixSearch").checked;
+            fetch("/api/" + tableName, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: JSON.stringify({ "data": searchPrompt , "translation":translation, "mix":mixSearch})
+            })
+                .then(response => response.json())
+                .then(data => {
+                    var linksContainer = document.getElementById("linksContainer");
+                    linksContainer.innerHTML = ""; // 清空链接容器内容
+                    var prompts = data[1]
+                    var lrcs = data[2]
+                    var songNames = data[3]
+
+                    data[0].forEach((links, prompt_index) => {
+                        var p = document.createElement("p");
+                        var prompt = prompts[prompt_index];
+                        var prompt_box = document.createElement("h3");
+                        prompt_box.textContent = prompt;
+                        p.appendChild(prompt_box);
+                        links.forEach((link, music_index) => {
+                            var a = document.createElement("a");
+                            a.href = "#"; // 设置空链接，防止页面跳转
+                            a.textContent = link.replace("_src.pt","");
+                            a.style.display = "block"; // 每个链接独占一行
+                            window.exist_audio = null;
+                            window.exist_lrc = null;
+                            window.exist_audio = null;
+                            a.onclick = function () {
+                                // 在点击链接下方插入音频控件
+                                var audioContainer = document.createElement("div");
+                                if (window.exist_audio != null) {
+                                    window.exist_audio.remove();
+                                }
+                                if (window.exist_lrc != null) {
+                                    window.exist_lrc.remove();
+                                }
+                                var audio = document.createElement("audio");
+                                audio.controls = true; // 显示播放控件
+                                audio.src = "/file/" + link;
+                                audio.autoplay = true; // 自动播放
+                                audio.addEventListener('canplaythrough', function () {
+                                    audio.play();
+                                });
+                                window.exist_audio = audio;
+                                audioContainer.appendChild(audio);
+                                p.insertBefore(audioContainer, a.nextSibling);
+                                window.exist_audio = audio;
+                                // console.log(lrcs)
+                                // console.log(songNames)
+                                if (lrcs != null && songNames!=null){
+                                    var lrc_box = document.createElement("div");
+                                    var title_box = document.createElement("h3");
+                                    var cont_box = document.createElement("div");
+                                    title_box.innerText = songNames[prompt_index][music_index];
+                                    cont_box.innerText = lrcs[prompt_index][music_index];
+                                    lrc_box.appendChild(title_box);
+                                    lrc_box.appendChild(cont_box);
+                                    var lrc_group = document.getElementById("lrc_group");
+                                    lrc_group.appendChild(lrc_box);
+                                    window.exist_lrc = lrc_box;
+                                } 
+                            };
+                            p.appendChild(a); // 将链接添加到容器中
+                        });
+                        linksContainer.appendChild(p);
+                    });
+                })
+                .catch(error => console.error("Error:", error));
+        }
+    </script>
+</body>
+
+</html>

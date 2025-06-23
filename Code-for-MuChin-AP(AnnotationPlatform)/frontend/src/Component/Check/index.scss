@@ -1,0 +1,32 @@
+.check_page {
+  width: 1300px;
+  height: 100%;
+  margin: 64px;
+
+  .check_search {
+    margin-bottom: 30px;
+
+    .check_search_input {
+      margin-right: 30px;
+    }
+  }
+
+  .check_list_item {
+    margin-bottom: 10px;
+  }
+
+  .check_show_lyrics_item {
+    margin-bottom: 10px;
+
+    .check_show_lyrics_item_type {
+      margin-right: 30px;
+    }
+  }
+
+  .check_show_btn{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  
+}

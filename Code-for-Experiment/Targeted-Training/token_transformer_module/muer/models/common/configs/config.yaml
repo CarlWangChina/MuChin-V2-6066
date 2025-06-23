@@ -1,0 +1,9 @@
+common:
+  demucs:
+    pretrained_model: "htdemucs"
+    stems:
+        - "drums"
+        - "bass"
+        - "other"
+        - "vocals"
+

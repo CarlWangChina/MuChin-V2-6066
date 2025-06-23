@@ -1,0 +1,1 @@
+This directory contains the code for calculating Intent Fidelity metrics, specifically Semantic Audio Alignment (SAA) and Acoustic Reference Alignment (ARA), as discussed in our research.

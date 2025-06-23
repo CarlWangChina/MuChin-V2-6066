@@ -1,0 +1,1 @@
+Contains a pre-trained HiFiGAN model used as a vocoder to convert Mel spectrograms back into WAV audio.

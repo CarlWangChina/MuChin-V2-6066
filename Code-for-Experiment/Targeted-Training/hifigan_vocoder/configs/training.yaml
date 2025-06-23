@@ -1,0 +1,20 @@
+training:
+  dataset:
+    data_dir: "/data/packed-wav-24000-mono"
+    meta_file_pattern: "wav_list_%d.csv"
+    data_file_pattern: "wav_list_%d.dat"
+    chunk_size: 65536
+    use_data_proportions: 1.0
+    train_proportion: 0.8
+  trainer:
+    checkpoint_dir: "/nfs/home/carl/data/outputs/hifigan/checkpoints"
+    version: "v1_large"
+    num_epochs: 500
+    discriminator_warmup_steps: 100
+    num_validation_steps: 20
+    checkpoint_interval: 2000
+    validation_interval: 100
+    dataloader_num_workers: 4
+    cudnn_enabled: false
+    random_seed: 666
+    mel_loss_weight: 45.0

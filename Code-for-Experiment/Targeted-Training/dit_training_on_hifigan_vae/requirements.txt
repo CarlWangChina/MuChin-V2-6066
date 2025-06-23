@@ -1,0 +1,23 @@
+torch
+torchaudio
+numpy
+scikit-learn
+tqdm
+accelerate
+einops
+omegaconf
+ffmpeg
+tensorboard
+gradio
+google-auth
+transformers==4.36.0
+sentencepiece
+encodec
+demucs
+pyloudnorm
+laion-clap
+tiktoken
+sacremoses
+librosa
+opencc-python-reimplemented
+# deepspeed

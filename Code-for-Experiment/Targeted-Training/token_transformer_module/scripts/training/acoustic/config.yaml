@@ -1,0 +1,65 @@
+acoustic_trainer:
+  parallel:
+    backend: "nccl"
+    master_addr: "10.101.10.28"
+    master_port: 29502
+  embedding:
+    checkpoint_dir: "/data/1/acoustic-tokenizer-snr-training/ckpts"
+    log_dir: "/data/1/acoustic-tokenizer-snr-training/logs"
+    use_data_files_proportion: 1.0
+    training_dataset_proportion: 0.9
+    dim: 128
+    batch_size: 64
+    ckpt_interval: 200
+    shuffle: true
+    random_seed: 7339
+    phases:
+      embedding:
+        epochs: 5
+        learning_rate: 0.1
+        optimizer: "Adam"
+  diffusion:
+    data_dir: "/data/acoustic-tokenizer-snr-full"
+    data_file_pattern: "**/*/*.mpg_yc.pt"
+    checkpoint_dir: "/data/1/acoustic-tokenizer-snr-training/ckpts"
+    log_dir: "/data/1/acoustic-tokenizer-snr-training/logs"
+    embedding_pretrained_model: "acoustic_embedding_128_epoch_3_batch_2600.ckpt"
+    embedding_ckpt_url: "https://ama-prof-divi-ai-public.s3.us-west-1.amazonaws.com/checkpoints/acoustic/acoustic_embedding_128_epoch_3_batch_2600.ckpt"
+    embedding_ckpt_sha256: "8fdcbd815888c1de7fa0ea0ed9642041a2b8f5b50b02a45c4ed111fb75aae8a8"
+    use_data_files_proportion: 1.0
+    training_dataset_proportion: 0.9
+    window_size: 16
+    batch_size: 3
+    vocab_size: 1028
+    start_id: 1025
+    pad_id: 1026
+    clap_dim: 512
+    tokens_chunk_len: 150
+    tokens_num_q: 8
+    ckpt_interval: 200
+    shuffle: true
+    random_seed:  7339
+    use_grad_clip: true
+    grad_clip_norm: 1.0
+    grad_clip_value: 1.0
+    phases:
+      warmup:
+        epochs: 1
+        learning_rate: 0.05
+        optimizer: "SGD"
+        max_batches: 8800
+        optimizer_args:
+      warmup2:
+        epochs: 1
+        learning_rate: 0.001
+        optimizer: "AdamW"
+        max_batches: 4400
+        optimizer_args:
+          eps: 1e-4
+        max_loss: 0.05
+      main:
+        epochs: 4
+        learning_rate: 0.0001
+        optimizer: "AdamW"
+        optimizer_args:
+          eps: 1e-4

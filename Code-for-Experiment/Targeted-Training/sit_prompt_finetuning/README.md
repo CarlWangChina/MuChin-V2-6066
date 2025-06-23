@@ -1,0 +1,1 @@
+An experiment with a Spectrum-Transformer (SiT) that incorporates prompt-based training. The config is set up to read CLAP vectors during the fine-tuning stage.

@@ -1,0 +1,140 @@
+.annotation {
+  width: 100%;
+  padding: 64px;
+}
+
+.lyrics_area {
+  width: 1300px;
+  // font-size:x-large;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.radio_item {
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.section_item {
+  font-size: large;
+  padding: 10px 20px;
+  margin: 10px 0px;
+  list-style: none;
+  width: fit-content;
+  cursor: pointer;
+}
+
+.rhyme_li {
+  display: flex;
+  font-size: larger;
+  align-items: center;
+  width: 1300px;
+  margin: 30px 0px;
+  .rhyme_ly {
+    flex: 1;
+  }
+  .rhyme_input {
+    margin-left: 10px;
+    width: 300px;
+  }
+}
+
+.music_form {
+  width: 1300px;
+}
+
+.qus {
+  margin-bottom: 30px;
+  .que_ui {
+    margin-bottom: 30px;
+  }
+  .que_ui_area {
+    margin-bottom: 60px;
+    margin-top: 10px;
+  }
+}
+
+.tips {
+  margin-bottom: 10px;
+  color: #e47e12;
+}
+
+.pass_div {
+  width: 1300px;
+  margin-bottom: 20px;
+}
+
+.pass_btn {
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+.pass_sec {
+  flex: 1
+}
+
+.pop {
+  width: 1000px;
+  pointer-events: none;
+  margin-left: 30px;
+}
+
+.sec_item_ui {
+  width: 1300px;
+}
+
+.sec_item_cas {
+  width: 300px;
+}
+
+.sec_item_tip {
+  margin-left: 30px;
+}
+
+.ant-float-btn {
+  inset-inline-start: 64px;
+}
+
+.qu_tip {
+  color: red;
+  margin-bottom: 10px;
+  width: 1300px;
+}
+
+.radio_edit_tip {
+  color: red;
+}
+
+.lyrics_item_container {
+  width: 1300px;
+  margin-bottom: 10px;
+
+  .lyrics_item_words {
+    margin-right: 10px;
+  }
+  .lyrics_item_time {
+    width: 600px;
+    margin-right: 10px;
+  }
+
+  .lyrics_item_pinyin {
+    width: 400px;
+    margin-right: 10px;
+  }
+
+  .lyrics_item_add_btn, .lyrics_item_remove_btn {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .lyrics_item_sec_action {
+    margin-left: 10px;
+  }
+  
+}

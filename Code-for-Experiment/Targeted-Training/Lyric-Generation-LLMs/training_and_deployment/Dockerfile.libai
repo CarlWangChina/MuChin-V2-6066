@@ -1,0 +1,37 @@
+# syntax=docker/dockerfile:1
+
+FROM qwenv_cu117/14b_c_i4:latest
+
+WORKDIR /data/shared/Qwen/
+
+### pip3 install paddlepaddle==2.4.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
+### pip3 install lac
+RUN <<EOF
+    pip3 install pika
+    pip3 install jieba
+    pip3 install zhconv
+EOF
+
+RUN mkdir -p ./final-ckpt/
+### COPY ./_tng00/data/ftop/ckpt2001_cb/* ./final-ckpt/
+COPY ./_tng00/data/ftop/ckpt3201_cb/* ./final-ckpt/
+RUN mkdir -p ./bert-bc/
+COPY ./models/bert-base-chinese/* ./bert-bc/
+
+### COPY ./sv_src/compose_poem.py ./compose_poem.py
+# COPY ./sv_src/compose_poem1.py ./compose_poem1.py
+COPY ./sv_src/compose_poem2.py ./compose_poem2.py
+COPY ./sv_src/mqc_helper.py ./mqc_helper.py
+# COPY ./sv_src/result_pub.py ./result_pub.py
+# COPY ./sv_src/infere_sub.py ./infere_sub.py
+COPY ./sv_src/app.py ./app.py
+
+RUN <<EOF
+    rm -rf eval examples finetune flash-attention
+    rm -f cli_demo.py finetune.py openai_api.py web_demo.py
+    rm -f requirements.txt requirements_web_demo.txt
+EOF
+
+WORKDIR /data/shared/Qwen/
+
+CMD python app.py && echo "ama-prof-divi-libai server started successfully."

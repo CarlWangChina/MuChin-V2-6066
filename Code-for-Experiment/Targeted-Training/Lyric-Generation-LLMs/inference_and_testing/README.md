@@ -1,0 +1,1 @@
+Contains scripts and code for running inference with the trained lyric generation models and for testing their performance.

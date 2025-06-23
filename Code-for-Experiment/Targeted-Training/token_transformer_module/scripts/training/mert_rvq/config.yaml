@@ -1,0 +1,18 @@
+mert_rvq_trainer:
+  data_dir: "/data/mert-v1-330m-75hz"
+  checkpoint_dir: "/data/1/mert-rvq-ckpts"
+  log_dir: "/data/1/mert-rvq-logs"
+  data_file_pattern: "**/*_mert.pt"
+  parallel_backend: "nccl"
+  master_addr: "localhost"
+  master_port: 29502
+  window_size: 20
+  feature_dim: 1024
+  feature_rate: 75
+  stride: -1
+  num_quantizers: 32
+  codebook_size: 512
+  similarity: "euclidean"
+  use_data_files_proportion: 1.0
+  training_dataset_proportion: 0.9
+  training_epochs: 5

@@ -1,0 +1,13 @@
+*.log
+*.pyc
+__pycache__/
+venv/
+.vscode/
+*.pyd
+csr/
+.cache/
+*.pyo
+download/
+.pytest_cache/
+model/
+user_accounts/

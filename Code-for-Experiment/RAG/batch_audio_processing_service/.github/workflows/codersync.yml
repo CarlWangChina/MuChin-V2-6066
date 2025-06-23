@@ -1,0 +1,49 @@
+name: Sync from GitHub to CodeUp
+
+on:
+  push:
+    branches:
+      - main # 触发条件，可根据需要修改
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout GitHub Repository
+      uses: actions/checkout@v4
+
+    - name: Debug git orgin444
+      run: |
+        git status origin
+        #git remote rm origin
+
+    - name: Configure Git for CodeUp
+      env:
+        ACCESS_TOKEN: ${{ secrets.CODEUP_TOKEN }}
+      run: |
+        git remote add codeup https://wangji:$ACCESS_TOKEN@codeup.aliyun.com/6616010758b06f87bcc6ab0f/ama-prof-divi-functions/dwd_clap_whisper.git
+        git config --global user.name "wangji"
+        git config --global user.email "wangji@ama-prof-divi.ai"
+
+    - name: Debug Git remote
+      run: git remote -v
+    
+    - name: Debug Dir
+      run: ls -la
+
+    - name: Debug git
+      run: git status codeup
+
+    - name: Debug git orgin
+      run: git status origin
+      
+    - name: Push to CodeUp
+      env:
+        ACCESS_TOKEN: ${{ secrets.CODEUP_TOKEN }}
+      run: |
+        git fetch --unshallow origin
+        #git push --mirror codeup
+        #git fetch origin
+        git push -f codeup main

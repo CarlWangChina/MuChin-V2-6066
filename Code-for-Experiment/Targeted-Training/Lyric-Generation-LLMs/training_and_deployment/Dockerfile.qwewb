@@ -1,0 +1,12 @@
+# syntax=docker/dockerfile:1
+
+FROM qwenllm/qwen:cu117
+
+WORKDIR /data/shared/Qwen/
+
+RUN mkdir -p ./base-model/
+
+COPY ./models/qwen/Qwen-14B-Chat-Int4/* ./base-model/
+
+CMD ls -l
+# name it to qwenv_cu117/14b_c_i4

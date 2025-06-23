@@ -1,0 +1,1824 @@
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 66, in analyse2json
+    dict = json.loads(result, strict=False)
+  File "E:\python310\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "E:\python310\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 3 column 1 (char 577)
+
+Source LRC:
+[00:00.00] 作词 : 葛东琪
+[00:00.73] 作曲 : 葛东琪
+[00:01.46] 编曲 : 葛东琪
+[00:02.19] 制作人 : 葛东琪
+[00:02.93]编曲 : 葛东琪
+[00:31.43]我主张制止不了就放任
+[00:38.07]这欲望与绝望之争
+[00:44.64]余温她却喜欢过门
+[00:50.26]临走呢
+[00:52.13]还随手关了灯
+[00:56.33]So funny
+[00:57.14]Ya i ya i ya i ya i ya i ya i ya
+[01:00.38]Ya i ya i ya i ya i
+[01:03.67]Ya i ya i ya i ya i ya i ya i ya
+[01:07.06]It's so funny ya i ya i
+[01:10.40]Ya i ya i ya i ya i ya i ya i ya
+[01:13.64]Ya i ya i ya i ya i
+[01:17.09]It's so funny ya i ya i ya i ya i ya
+[01:20.43]Ya i ya i ya i ya i
+[01:51.39]我主张克制不了就放任
+[01:58.11]悬上该有的天真
+[02:04.69]起伏在于喜怒哀乐
+[02:10.36]松了绳
+[02:12.18]大不了无人问
+[02:17.13]Ya i ya i ya i ya i ya i ya i ya
+[02:20.43]Ya i ya i ya i ya i
+[02:23.72]Ya i ya i ya i ya i ya i ya i ya
+[02:27.05]It's so funny ya i ya i
+[02:30.45]Ya i ya i ya i ya i ya i ya i ya
+[02:33.74]Ya i ya i ya i ya
+[02:37.08]It's so funny ya i ya i ya i ya i ya
+[02:40.41]Ya i ya i ya i ya
+[02:42.29]有什么话要说
+[03:14.19]录音师 : 葛东琪
+[03:15.22]混音师 : 葛东琪
+[03:16.05]制作人 : 葛东琪
+
+Resp Content:
+{"completion": "我主张制止不了就放任\n这欲望与绝望之争\n余温她却喜欢过门\n临走呢\n还随手关了灯\nSo funny\nYa i ya i ya i ya i ya i ya i ya\nYa i ya i ya i ya i\nYa i ya i ya i ya i ya i ya i ya\nIt's so funny ya i ya i\nYa i ya i ya i ya i ya i ya i ya\nYa i ya i ya i ya i\nIt's so funny ya i ya i ya i ya i ya\nYa i ya i ya i ya i\n我主张克制不了就放任\n悬上该有的天真\n起伏在于喜怒哀乐\n松了绳\n大不了无人问\nYa i ya i ya i ya i ya i ya i ya\nYa i ya i ya i ya i\nYa i ya i ya i ya i ya i ya i ya\nIt's so funny ya i ya i\nYa i ya i ya i ya i ya i ya i ya\nYa i ya i ya i ya\nIt's so funny ya i ya i ya i ya i ya\nYa i ya i ya i ya\n有什么话要说"}
+
+{"prompt": "情感主题：无\n情感关系：欲望与绝望之争\n表达风格：幽默、夸张\n背景氛围：轻松、快乐\n歌词结构：ABAB\n节奏感和韵律：明快\n其他关键信息：作词、作曲、编曲、制作人等都是葛东琪\n可能的创作灵感：生活中的矛盾与放任的态度可以成为创作灵感"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 47, in verify_result
+    raise Exception("The 'completion' still contains LRC tags.")
+Exception: The 'completion' still contains LRC tags.
+
+Source LRC:
+[00:00.00] 作词 : 黄俊郎
+[00:01.00] 作曲 : 周杰伦
+[00:02.00] 编曲 : 林迈可
+[00:03.00] 制作人 : 周杰伦
+[00:32.71]凯：蝉鸣是窗外渐渐倒数的钟声
+[00:37.37]考卷的分数是往上爬的树藤
+[00:41.57]我画在你手掌上的蝴蝶
+[00:45.50]飞走了吗
+[00:49.82]源：白云是蓝天正在放的风筝
+[00:54.16]青春是操场奔跑的我们
+[00:58.05]玺：不要担心受伤
+[01:00.56]勇敢地朝梦想 闯一闯
+[01:06.42]嘻游记：还记得 我在等你下课
+[01:09.90]想送你的鲜花我手拿着
+[01:11.98]经过的同学大家都笑着
+[01:13.85]因为花新鲜到蜜蜂都还停留着
+[01:16.01]合：喔喔 被叮了 喔喔 你笑了
+[01:20.26]喔喔 尴尬了 喔喔 你的脸红了
+[01:27.17]合：枫下的秋千 盛夏的暗恋
+[01:32.05]我们说过要永远在对方身边
+[01:36.27]走廊的光线 剪影的校园
+[01:39.95]即将是从前
+[01:41.53]嘻游记：枫下的秋千 盛夏的暗恋
+[01:43.47]我们说过要永远 在对方身边
+[01:45.31]合：毕业的那天 剩下的时间
+[01:48.91]能不能别轻易 就说了再见
+[01:53.15]快门按下 手牵着手 暂停童年
+[01:58.41]嘻游记：剩下的盛夏呢 喔喔被叮了
+[02:00.58]剩下的盛夏呢 喔喔你笑了
+[02:02.69]剩下的盛夏呢 喔喔尴尬了
+[02:04.93]你的脸红了 我的脸肿了
+[02:06.88]合：剩下的盛夏呢 喔喔被叮了
+[02:08.97]剩下的盛夏呢 喔喔你笑了
+[02:11.07]剩下的盛夏呢 喔喔尴尬了
+[02:15.39]源：蝉鸣是窗外渐渐倒数的钟声
+[02:20.46]考卷的分数是往上爬的树藤
+[02:24.69]我画在你手掌上的蝴蝶
+[02:28.56]飞走了吗
+[02:32.53]玺：白云是蓝天正在放的风筝
+[02:37.33]青春是操场奔跑的我们
+[02:41.16]凯：不要担心受伤
+[02:43.69]勇敢地朝梦想 闯一闯
+[02:49.93]嘻游记：还记得 我在等你下课
+[02:53.04]想送你的鲜花我手拿着
+[02:55.15]经过的同学大家都笑着
+[02:57.00]因为花新鲜到蜜蜂都还停留着
+[02:59.23]合：喔喔 被叮了 喔喔 你笑了
+[03:03.42]喔喔 尴尬了 喔喔 你的脸红了
+[03:10.51]合：枫下的秋千 盛夏的暗恋
+[03:15.23]我们说过要永远在对方身边
+[03:19.39]走廊的光线 剪影的校园
+[03:23.09]即将是从前
+[03:24.66]嘻游记：枫下的秋千 盛夏的暗恋
+[03:26.57]我们说过要永远 在对方身边
+[03:28.44]合：毕业的那天 剩下的时间
+[03:32.05]能不能别轻易 就说了再见
+[03:36.34]快门按下 手牵着手 暂停童年
+[03:41.50]嘻游记：剩下的盛夏呢 喔喔被叮了
+[03:43.70]剩下的盛夏呢 喔喔你笑了
+[03:45.85]剩下的盛夏呢 喔喔尴尬了
+[03:48.03]你的脸红了 我的脸肿了
+[03:50.08]合：剩下的盛夏呢 喔喔被叮了
+[03:52.13]剩下的盛夏呢 喔喔你笑了
+[03:54.29]剩下的盛夏呢 喔喔尴尬了
+
+Resp Content:
+{"completion": "凯：蝉鸣是窗外渐渐倒数的钟声\n[00:37.37]考卷的分数是往上爬的树藤\n[00:41.57]我画在你手掌上的蝴蝶\n[00:45.50]飞走了吗\n[01:06.42]嘻游记：还记得 我在等你下课\n[01:09.90]想送你的鲜花我手拿着\n[01:11.98]经过的同学大家都笑着\n[01:13.85]因为花新鲜到蜜蜂都还停留着\n[01:20.26]喔喔 尴尬了 喔喔 你的脸红了\n[01:32.05]我们说过要永远在对方身边\n[01:36.27]走廊的光线 剪影的校园\n[01:39.95]即将是从前\n[01:41.53]嘻游记：枫下的秋千 盛夏的暗恋\n[01:43.47]我们说过要永远 在对方身边\n[01:45.31]合：毕业的那天 剩下的时间\n[01:48.91]能不能别轻易 就说了再见\n[02:43.69]勇敢地朝梦想 闯一闯\n[02:49.93]嘻游记：还记得 我在等你下课\n[02:53.04]想送你的鲜花我手拿着\n[02:55.15]经过的同学大家都笑着\n[02:57.00]因为花新鲜到蜜蜂都还停留着\n[03:03.42]喔喔 尴尬了 喔喔 你的脸红了\n[03:15.23]我们说过要永远在对方身边\n[03:19.39]走廊的光线 剪影的校园\n[03:23.09]即将是从前\n[03:24.66]嘻游记：枫下的秋千 盛夏的暗恋\n[03:26.57]我们说过要永远 在对方身边\n[03:28.44]合：毕业的那天 剩下的时间\n[03:32.05]能不能别轻易 就说了再见\n[03:43.70]剩下的盛夏呢 喔喔你笑了\n[03:45.85]剩下的盛夏呢 喔喔尴尬了", "prompt": "情感主题：青春校园，暗恋\n情感关系：回忆友情、暗恋\n表达风格：轻快、活泼\n背景氛围：校园、青春\n歌词结构：轻快的歌词结构，多次重复\n节奏感和韵律：歌曲节奏感强烈，韵律欢快\n其他关键信息：表达了青春时期的回忆、友情和暗恋的情感\n可能的创作灵感：校园青春，友情与暗恋的主题，可以创作类似的歌曲"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 66, in analyse2json
+    dict = json.loads(result, strict=False)
+  File "E:\python310\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "E:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "E:\python310\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 785 (char 784)
+
+Source LRC:
+[00:00.000] 作词 : 陆 菱纱
+[00:01.000] 作曲 : タイナカ彩智
+[00:02.000] 编曲 : 島田 尚
+[00:03.000] 原唱 : 田井中彩智
+[00:04.000] 中文原唱：Lon 
+[00:05.000] 
+[00:06.000] 制作人：星 克典 /島田 尚
+[00:07.000] 
+[00:08.000] 
+[00:09.000] 
+[00:10.000] 混音：熊木 治野
+[00:11.000] 
+[00:12.000] 母带：熊木 治野
+[00:13.000] 
+[00:14.000] 小提琴 : 横山久梨子
+[00:15.000] 
+[00:16.000] 钢琴：島田 尚
+[00:17.000] 
+[00:18.000] 吉他：島田 尚
+[00:19.000] 
+[00:20.000] 贝斯：垣下祐紀
+[00:21.000] 
+[00:22.000] 特别支持：タイナカ彩智 /羽毛田丈史
+[00:26.210]那年长街春意正浓
+[00:31.050]策马同游 烟雨如梦
+[00:38.510]檐下躲雨
+[00:40.230]望进一双深邃眼瞳
+[00:45.400]宛如华山夹着细雪的微风
+[00:51.680]雨丝微凉
+[00:53.260]风吹过暗香朦胧
+[00:56.250]一时心头悸动 似你温柔剑锋
+[00:59.360]过处翩若惊鸿
+[01:02.838]
+[01:04.658]是否情字写来都空洞
+[01:08.110]一笔一画斟酌着奉送
+[01:11.268]甘愿卑微换个笑容
+[01:13.548]或沦为平庸
+[01:17.369]而你撑伞拥我入怀中
+[01:20.408]一字一句誓言多慎重
+[01:23.539]你眼中有柔情千种
+[01:25.899]如脉脉春风 冰雪也消融
+[01:35.030]
+[01:43.110]后来谁家喜宴重逢
+[01:47.649]佳人在侧 烛影摇红
+[01:55.280]灯火缱绻
+[01:56.980]映照一双如画颜容
+[02:02.250]宛如豆蔻枝头温柔的旧梦
+[02:08.519]对面不识
+[02:10.038]恍然间思绪翻涌
+[02:13.098]望你白衣如旧 神色几分冰冻
+[02:16.378]谁知我心惶恐
+[02:18.729]
+[02:18.979]也许我应该趁醉装疯
+[02:21.839]借你怀抱留一抹唇红
+[02:24.979]再将旧事轻歌慢诵
+[02:27.339]任旁人惊动
+[02:31.119]可我只能假笑扮从容
+[02:34.199]侧耳听那些情深意重
+[02:37.229]不去看你熟悉脸孔
+[02:39.628]只默默饮酒 多无动于衷
+[02:45.990]
+[02:46.788]山门外 雪拂过白衣 又在指尖消融
+[02:52.889]负长剑 试问江湖阔大 该何去何从
+[02:58.748]今生至此 像个笑话一样 自己都嘲讽
+[03:04.888]一厢情愿 有始无终
+[03:13.558]
+[03:14.229]若你早与他人两心同
+[03:17.288]何苦惹我错付了情衷
+[03:20.408]难道看我失魂落魄
+[03:22.679]你竟然心动
+[03:26.538]所幸经年漂浮红尘中
+[03:29.508]这颗心已是千疮百孔
+[03:32.688]怎惧你以薄情为刃 添一道裂缝
+[03:37.110]又不会痛
+[03:38.788]不如将过往埋在风中
+[03:41.878]以长剑为碑 以霜雪为冢
+[03:44.878]此生若是错在相逢
+[03:47.278]求一个善终
+[03:51.080]孤身打马南屏旧桥间过
+[03:54.139]恰逢山雨来时雾蒙蒙
+[03:57.229]想起那年伞下轻拥
+[03:59.479]就像躺在桥索之上 做了一场梦
+[04:04.838]梦醒后跌落 粉身碎骨
+[04:08.308]无影亦无踪
+[04:29.360]「一番星」
+[04:30.869]（C）2007 by NBCUniversal Entertainment Japan,LLC，Sony Music Publishing (Japan) Inc. & PONY CANYON MUSIC INC.
+[04:33.517]故事背景来源：《剑侠情缘网络版叁》（简称《剑网3》）
+[04:35.999]企划/出品：三糙文化 / NEGIA纳吉音
+
+Resp Content:
+{"completion": "那年长街春意正浓\n策马同游 烟雨如梦\n檐下躲雨\n望进一双深邃眼瞳\n宛如华山夹着细雪的微风\n雨丝微凉\n风吹过暗香朦胧\n一时心头悸动 似你温柔剑锋\n过处翩若惊鸿\n是否情字写来都空洞\n一笔一画斟酌着奉送\n甘愿卑微换个笑容\n或沦为平庸\n而你撑伞拥我入怀中\n一字一句誓言多慎重\n你眼中有柔情千种\n如脉脉春风 冰雪也消融\n后来谁家喜宴重逢\n佳人在侧 烛影摇红\n灯火缱绻\n映照一双如画颜容\n宛如豆蔻枝头温柔的旧梦\n对面不识\n恍然间思绪翻涌\n望你白衣如旧 神色几分冰冻\n谁知我心惶恐\n也许我应该趁醉装疯\n借你怀抱留一抹唇红\n再将旧事轻歌慢诵\n任旁人惊动\n可我只能假笑扮从容\n侧耳听那些情深意重\n不去看你熟悉脸孔\n只默默饮酒 多无动于衷\n山门外 雪拂过白衣 又在指尖消融\n负长剑 试问江湖阔大 该何去何从\n今生至此 像个笑话一样 自己都嘲讽\n一厢情愿 有始无终\n若你早与他人两心同\n何苦惹我错付了情衷\n难道看我失魂落魄\n你竟然心动\n所幸经年漂浮红尘中\n这颗心已是千疮百孔\n怎惧你以薄情为刃 添一道裂缝\n又不会痛\n不如将过往埋在风中\n以长剑为碑 以霜雪为冢\n此生若是错在相逢\n求一个善终\n孤身打马南屏旧桥间过\n恰逢山雨来时雾蒙蒙\n想起那年伞下轻拥\n就像躺在桥索之上 做了一场梦\n梦醒后跌落 粉身碎骨\n无影亦无踪", "prompt": {"情感主题": "纯爱", "情感关系": "错过的爱", "表达风格": "柔情细腻", "背景氛围": "古风江湖", "歌词结构": "四段抒情描述", "节奏感和韵律": "缓慢舒展的旋律", "其他关键信息": "该歌曲是《剑侠情缘网络版叁》的主题曲", "可能的创作灵感": "江湖恋情的描写"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 43, in verify_result
+    raise Exception("The 'prompt' part is missing!")
+Exception: The 'prompt' part is missing!
+
+Source LRC:
+[00:00.000] 作词 : 王韵韵
+[00:01.000] 作曲 : 刘佳
+[00:03.650]凯：跟着我 左手
+[00:05.950]右手 一个慢动作
+[00:08.610]右手 左手 慢动作重播
+[00:11.850]玺：这首歌 给你快乐
+[00:15.960]你有没有爱上我
+[00:18.620]源： 跟着我 鼻子
+[00:20.800]眼睛 动一动耳朵
+[00:23.500]装乖 耍帅 换不停风格
+[00:26.740]合：青春有太多
+[00:28.690]未知的猜测
+[00:31.450]成长的烦恼算什么
+[00:35.150]源：皮鞋擦亮 换上西装
+[00:53.170]佩戴上一克拉的梦想
+[00:56.000]玺：我的勇敢充满电量
+[01:00.450]昂首到达每一个地方
+[01:03.530]凯： 这世界 的太阳
+[01:08.000]因为自信才能把我照亮
+[01:11.170]这舞台 的中央
+[01:14.850]合：有我才闪亮
+[01:17.270]有我才能发着光
+[01:21.760]合： 跟着我 左手 右手
+[01:23.920]一个慢动作
+[01:26.240]右手 左手慢动作重播
+[01:29.910]这首歌 给你快乐
+[01:33.660]你有没有爱上我
+[01:36.680]跟着我 鼻子眼睛
+[01:38.670]动一动耳朵
+[01:40.960]装乖 耍帅 换不停风格
+[01:44.510]青春有太多 未知的猜测
+[01:48.190]成长的烦恼算什么
+[01:51.500]源：经常会想 长大多好
+[02:10.170]有些事情却只能想象
+[02:12.940]玺：想说就说 想做就做
+[02:17.910]为了明天的自己鼓掌
+[02:20.670]凯：这世界 的太阳
+[02:25.090]因为自信才能把我照亮
+[02:28.040]这舞台 的中央
+[02:31.610]合：有我才闪亮
+[02:34.270]有我才能发着光
+[02:38.490]合： 跟着我左手右手
+[02:41.410]一个慢动作
+[02:43.740]右手 左手 慢动作重播
+[02:47.450]这首歌 给你快乐
+[02:51.180]你有没有爱上我
+[02:54.180]跟着我 鼻子 眼睛
+[02:56.220]动一动耳朵
+[02:58.530]装乖 耍帅 换不停风格
+[03:02.080]青春有太多 未知的猜测
+[03:05.660]成长的烦恼算什么
+[03:08.830]凯Rap:
+[03:14.490]向明天 对不起
+[03:16.320]向前冲 不客气
+[03:19.900]一路有你 充满斗志无限动力
+[03:22.600]合：男子汉 没有什么输不起
+[03:26.840]正太修炼成功的秘籍
+[03:29.980]源： 跟着我左手右手
+[03:32.180]一个慢动作
+[03:33.760]玺： 右手左手慢动作重播
+[03:37.340]凯： 这首歌 给你快乐
+[03:41.960]你有没有爱上我
+[03:44.460]合： 跟着我鼻子眼睛
+[03:46.970]动一动耳朵
+[03:49.290]装乖 耍帅 换不停风格
+[03:52.780]青春有太多 未知的猜测
+[03:56.520]成长的烦恼算什么
+
+Resp Content:
+{"completion": "跟着我 左手\n右手 一个慢动作\n右手 左手 慢动作重播\n这首歌 给你快乐\n你有没有爱上我\n跟着我 鼻子\n眼睛 动一动耳朵\n装乖 耍帅 换不停风格\n青春有太多\n未知的猜测\n成长的烦恼算什么\n皮鞋擦亮 换上西装\n佩戴上一克拉的梦想\n我的勇敢充满电量\n昂首到达每一个地方\n这世界 的太阳\n因为自信才能把我照亮\n这舞台 的中央\n有我才闪亮\n有我才能发着光\n跟着我 左手 右手\n一个慢动作\n右手 左手慢动作重播\n这首歌 给你快乐\n你有没有爱上我\n跟着我 鼻子眼睛\n动一动耳朵\n装乖 耍帅 换不停风格\n青春有太多 未知的猜测\n成长的烦恼算什么\n经常会想 长大多好\n有些事情却只能想象\n想说就说 想做就做\n为了明天的自己鼓掌\n这世界 的太阳\n因为自信才能把我照亮\n这舞台 的中央\n有我才闪亮\n有我才能发着光\n跟着我左手右手\n一个慢动作\n右手 左手 慢动作重播\n这首歌 给你快乐\n你有没有爱上我\n跟着我 鼻子 眼睛\n动一动耳朵\n装乖 耍帅 换不停风格\n青春有太多 未知的猜测\n成长的烦恼算什么\n凯Rap:\n向明天 对不起\n向前冲 不客气\n一路有你 充满斗志无限动力\n男子汉 没有什么输不起\n正太修炼成功的秘籍\n跟着我左手右手\n一个慢动作\n右手左手慢动作重播\n这首歌 给你快乐\n你有没有爱上我\n跟着我鼻子眼睛\n动一动耳朵\n装乖 耍帅 换不停风格\n青春有太多 未知的猜测\n成长的烦恼算什么"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 43, in verify_result
+    raise Exception("The 'prompt' part is missing!")
+Exception: The 'prompt' part is missing!
+
+Source LRC:
+[00:00.00] 作词 : Amala Zandile Dlamini/Isaac Earl Bynum/Burt Bacharach/Hal David
+[00:01.00] 作曲 : Amala Zandile Dlamini/Isaac Earl Bynum/Burt Bacharach/Hal David
+[00:19.57]***** I said what I said
+[00:21.95]I’d rather be famous instead
+[00:24.40]I let all that get to my head
+[00:26.78]I don’t care, I paint the town red
+[00:29.19]***** I said what I said
+[00:31.64]I’d rather be famous instead
+[00:34.00]I let all that get to my head
+[00:36.44]I don’t care, I paint the town red
+[00:38.91]Mmm
+[00:39.84]She the Devil
+[00:40.94]She a bad lil ***** she a rebel
+[00:43.31]N’ she put her foot
+[00:44.54]To the pedal
+[00:45.73]It’ll take a whole lot for me to settle
+[00:48.52]Mmm
+[00:49.41]She the Devil
+[00:50.58]She a bad lil ***** she a rebel
+[00:52.89]N’ she put her foot
+[00:54.15]to the pedal
+[00:55.37]It’ll take a whole lot for me to settle
+[00:58.04]My happiness is all of your misery
+[01:00.33]I put good **** all in my kidneys
+[01:02.84]This margiel’ don’t come with no jealousy
+[01:05.19]My illness don’t come with no remedy
+[01:07.65]I am so much fun without Hennessy
+[01:10.04]They just want my love and my energy
+[01:12.42]You can’t talk no shit without penalties
+[01:14.81]***** I’m in yo’ shit if you send for me
+[01:17.19]I’m going to glow up one more time
+[01:19.63]Trust me I have magical foresight
+[01:22.10]You gon see me sleepin’ in courtside
+[01:24.43]You gon see me eatin’ ten more times
+[01:26.92]UGH
+[01:27.58]You can’t take this one nowhere
+[01:29.32]Ugh
+[01:29.89]I LOOK BETTER WITH NO HAIR
+[01:31.62]Ugh
+[01:32.39]AINT NO SIGN I CAN’T SMOKE HERE
+[01:34.08]Ugh
+[01:34.71]Gimme the chance and I’ll go there
+[01:36.46]***** I said what I said
+[01:38.78]I’d rather be famous instead
+[01:41.23]I let all that get to my head
+[01:43.64]I don’t care, I paint the town red
+[01:46.00]***** I said what I said
+[01:48.46]I’d rather be famous instead
+[01:50.79]I let all that get to my head
+[01:53.25]I don’t care, I paint the town red
+[01:55.63]Mmm
+[01:56.56]She the Devil
+[01:57.71]She a bad lil *****  she a rebel
+[02:00.26]N’ she put her foot
+[02:01.31]To the pedal
+[02:02.55]It’ll take a whole lot for me to settle
+[02:05.21]Mmm
+[02:06.16]She the Devil
+[02:07.32]She a bad lil *****  she a rebel
+[02:09.66]N’ she put her foot
+[02:10.87]To the pedal
+[02:12.08]It’ll take a whole lot for me to settle
+[02:14.79]POP MAKE MONEY
+[02:15.56]NOW YOU TRY *****
+[02:16.93]YOU COULD USE A REVAMP WITH A NEW VIBE SIS
+[02:19.40]I DONT NEED A BIG FEATURE OR A NEW SIDEKICK
+[02:21.75]I DONT NEED A NEW FAN ‘CAUSE MY BOO LIKE IT
+[02:24.10]I DONT NEED TO WEAR A WIG TO MAKE YOU LIKE IT
+[02:26.50]I’MMA TWO-TIME *****
+[02:27.64]YOU AIN’T KNEW I’D WIN
+[02:28.86]THROW A SHOT LIKE YOU TRYNA HAVE A FOOD FIGHT THEN
+[02:31.38]ALL MY OPPS WAITIN’ FOR ME TO BE YOU I BET
+[02:33.86]I GOT DRIVE, I DONT NEED A CAR
+[02:36.38]MONEY REALLY ALL THAT WE FIENDIN’ FOR
+[02:38.82]I’M DOIN’ THANGS THEY AIN’T SEEN BEFORE
+[02:41.20]FANS AIN’T DUMB BUT EXTREMISTS ARE
+[02:44.67]I’M A DEMON LORD
+[02:45.93]FALL OFF WHAT I AIN’T SEEN THE HORSE
+[02:48.40]CALLED YOUR BLUFF
+[02:49.61]BETTER CITE THE SOURCE
+[02:50.78]FAME AIN’T SOMETHIN’ THAT I NEED NO MORE
+[02:52.86]‘CAUSE
+[02:53.23]***** I said what I said
+[02:55.56]I’d rather be famous instead
+[02:57.98]I let all that get to my head
+[03:00.33]I don’t care, I paint the town red
+[03:02.75]***** I said what I said
+[03:05.21]I’d rather be famous instead
+[03:07.58]I let all that get to my head
+[03:10.01]I don’t care, I paint the town red
+[03:12.30]Mmm
+[03:13.33]She the Devil
+[03:14.50]She a bad lil *****  she a rebel
+[03:16.91]N’ she put her foot
+[03:18.07]To the pedal
+[03:19.30]It’ll take a whole lot for me to settle
+[03:21.89]Mmm
+[03:22.95]She the Devil
+[03:24.12]She a bad lil *****  she a rebel
+[03:25.99]N’ she put her foot
+[03:27.69]To the pedal
+[03:28.90]It’ll take a whole lot for me to settle
+
+Resp Content:
+{"completion": "I said what I said\n\nI’d rather be famous instead\n\nI let all that get to my head\n\nI don’t care, I paint the town red\n\nI said what I said\n\nI’d rather be famous instead\n\nI let all that get to my head\n\nI don’t care, I paint the town red\n\nShe the Devil\n\nShe a bad lil ***** she a rebel\n\nN’ she put her foot\n\nTo the pedal\n\nIt’ll take a whole lot for me to settle\n\nShe the Devil\n\nShe a bad lil ***** she a rebel\n\nN’ she put her foot\n\nto the pedal\n\nIt’ll take a whole lot for me to settle\n\nMy happiness is all of your misery\n\nI put good **** all in my kidneys\n\nThis margiel’ don’t come with no jealousy\n\nMy illness don’t come with no remedy\n\nI am so much fun without Hennessy\n\nThey just want my love and my energy\n\nYou can’t talk no shit without penalties\n\nI’m in yo’ shit if you send for me\n\nI’m going to glow up one more time\n\nTrust me I have magical foresight\n\nYou gon see me sleepin’ in courtside\n\nYou gon see me eatin’ ten more times\n\nUGH\n\nYou can’t take this one nowhere\n\nUgh\n\nI LOOK BETTER WITH NO HAIR\n\nUgh\n\nAINT NO SIGN I CAN’T SMOKE HERE\n\nUgh\n\nGimme the chance and I’ll go there\n\nI said what I said\n\nI’d rather be famous instead\n\nI let all that get to my head\n\nI don’t care, I paint the town red\n\nI said what I said\n\nI’d rather be famous instead\n\nI let all that get to my head\n\nI don’t care, I paint the town red\n\nShe the Devil\n\nShe a bad lil *****  she a rebel\n\nN’ she put her foot\n\nTo the pedal\n\nIt’ll take a whole lot for me to settle\n\nShe the Devil\n\nShe a bad lil *****  she a rebel\n\nN’ she put her foot\n\nTo the pedal\n\nIt’ll take a whole lot for me to settle\n\nPOP MAKE MONEY\n\nNOW YOU TRY *****\n\nYOU COULD USE A REVAMP WITH A NEW VIBE SIS\n\nI DONT NEED A BIG FEATURE OR A NEW SIDEKICK\n\nI DONT NEED A NEW FAN ‘CAUSE MY BOO LIKE IT\n\nI DONT NEED TO WEAR A WIG TO MAKE YOU LIKE IT\n\nI’MMA TWO-TIME *****\n\nYOU AIN’T KNEW I’D WIN\n\nTHROW A SHOT LIKE YOU TRYNA HAVE A FOOD FIGHT THEN\n\nALL MY OPPS WAITIN’ FOR ME TO BE YOU I BET\n\nI GOT DRIVE, I DONT NEED A CAR\n\nMONEY REALLY ALL THAT WE FIEN..."}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.00] 作词 : 李瑜哲
+[00:01.00] 作曲 : 颜小健
+[00:02.00] 编曲 : 恩德/颜小健
+[00:12.67]源：
+[00:15.84]周末一睁开眼睛心情挺好
+[00:19.59]起床洗漱选一件休闲外套
+[00:23.45]如果你的感冒还没完全好
+[00:26.32]Wo wo 跟我骑单车环岛
+[00:30.26]玺：
+[00:30.98]每天我们都在跟时间赛跑
+[00:34.82]周末也别太认真的睡懒觉
+[00:38.67]户外的空气远离城市喧嚣
+[00:41.48]你生病 它不好 不赶快出来跳跳
+[00:45.47]凯：
+[00:46.30]快节奏会让你情绪神魂颠倒
+[00:50.09]摩天楼恐惧症像是活在监牢
+[00:53.90]要知道你要的什么才最重要
+[00:57.37]合：
+[01:00.67]你要身体还是钞票
+[01:01.52]快乐你买不到 幸福你也买不到
+[01:09.30]关掉那些烦心的
+[01:11.98]需要自己用心去创造
+[01:14.40]把不相关的甩掉
+[01:16.95]快乐微笑就好 别在乎重不重要
+[01:24.47]忘掉那些没必要的
+[01:27.18]一起去 自由的
+[01:29.06]在你我世界环岛wowo
+[01:34.66]源：
+[01:35.81]这个世界变得越来越热闹
+[01:39.61]也有太多人在为成长烦恼
+[01:42.40]凯：
+[01:43.36]嫌弃时间一天比一天变少
+[01:46.28]为什么 连蓝天
+[01:48.09]都忘记出来微笑
+[01:50.11]玺：
+[01:51.02]大雨天就当做给地球洗个澡
+[01:54.92]把一些复杂悲伤的通通冲掉
+[01:58.63]雨后的彩虹会变得更加美好
+[02:01.65]合：
+[02:02.16]迎着微风出去奔跑
+[02:06.26]快乐你买不到 幸福你也买不到
+[02:14.08]关掉那些烦心的
+[02:16.67]需要自己用心去创造
+[02:19.11]把不相关的甩掉
+[02:21.66]快乐微笑就好 别在乎重不重要
+[02:29.30]忘掉那些没必要的
+[02:31.93]一起去 自由的
+[02:33.81]在你我世界环岛wowo
+[02:36.00]凯：
+[02:36.25]Hey
+[02:37.35]每分每秒 都尽量去保持微笑
+[02:40.54]所有烦的难的事情
+[02:42.09]别占据你的大脑
+[02:44.31]感到快乐大声尖叫
+[02:46.17]怎么努力我们知道
+[02:48.18]千万不要骄傲 跌倒
+[02:49.87]也没有什么大不了
+[02:51.36]合：
+[02:51.73]跑 跑 跑 跑
+[02:53.27]凯：
+[02:53.89]尽量不要迟到
+[02:55.66]向着梦想起跑
+[02:57.60]前方的路我已经看到
+[02:59.68]视野慢慢变高
+[03:01.49]思想慢慢知晓
+[03:03.39]快来你我的世界
+[03:04.87]我们一起自由环岛
+[03:07.02]源：
+[03:07.44]快乐已经来到 幸福在心里环绕
+[03:13.87]合：
+[03:15.02]别不开心地祈祷
+[03:17.63]生活需要用心去创造
+[03:20.10]把不相关的甩掉
+[03:22.60]快乐已经来到
+[03:26.40]幸福在心里环绕
+[03:30.24]关掉那些无聊频道
+[03:32.94]一起去 自由的
+[03:34.74]在你我世界环岛
+
+Resp Content:
+{"completion": "快乐已经来到 幸福在心里环绕", "prompt": "情感主题：快乐幸福\n情感关系：快乐与幸福\n表达风格：轻松愉快\n背景氛围：欢快阳光\n歌词结构：每节都有合唱部分\n节奏感和韵律：节奏明快、韵律流畅\n其他关键信息：歌词鼓励乐观积极的生活态度\n可能的创作灵感：以快乐和幸福为主题，表达对美好生活的向往"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 66, in analyse2json
+    dict = json.loads(result, strict=False)
+  File "E:\python310\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "E:\python310\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 2 column 1 (char 353)
+
+Source LRC:
+[00:00.00] 原唱 : 戴佩妮
+[00:00.70] 作词 : 戴佩妮
+[00:01.41] 作曲 : 戴佩妮
+[00:02.12] 音乐总监：刘卓@维伴音乐
+[00:02.83] 制作人：王鲁飞lufy
+[00:03.54] 改编编曲：王鲁飞lufy
+[00:04.25] 编曲乐手: 王春/张梦斌/董子元
+[00:04.96] 键盘：傅一峥@维伴音乐/孙维峰@维伴音乐
+[00:05.67] 吉他：郎梓朔@维伴音乐/赵新博
+[00:06.38] 鼓：邓华龙@维伴音乐
+[00:07.09] 打击乐：黑哥@维伴音乐
+[00:07.79] 贝斯：杨琪@维伴音乐
+[00:08.50] 合声：袁娅维TIA RAY/石行@维伴音乐/马思莹@维伴音乐/邢晏侨@维伴音乐
+[00:09.21] 电脑工程：孙维峰@维伴音乐
+[00:09.92] 合声编写：袁娅维TIA RAY
+[00:10.63] 人声编辑：袁祥赫/石行@维伴音乐
+[00:11.34] 混音：黄可爱@维伴音乐
+[00:12.05] 音乐统筹：郎梓朔@维伴音乐
+[00:12.76] 制作团队：北京维伴文化传媒有限公司
+[00:13.47] SP：华纳盛世音乐版权代理（北京）有限公司
+[00:14.19]虽然经常梦见你
+[00:20.10]还是毫无头绪
+[00:24.30]外面正在下着雨
+[00:27.33]今天是星期几
+[00:30.06]But I don't know
+[00:32.76]你去哪里
+[00:36.69]
+[00:38.79]虽然不曾怀疑你
+[00:44.61]还是忐忑不定
+[00:51.12]谁是你的那个唯一
+[00:54.81]原谅我怀疑自己
+[01:00.39]
+[01:00.48]我明白 我要的爱 会把我宠坏
+[01:10.77]像一个小孩 只懂在你怀里坏
+[01:15.87]你要的爱 不只是依赖
+[01:23.04]要像个大男孩 风吹又日晒
+[01:26.22]生活自由自在
+[01:42.06]
+[01:43.50]虽然不曾怀疑你
+[01:49.32]还是忐忑不定
+[01:55.77]谁是你的那个唯一
+[01:59.52]原谅我 怀疑自己
+[02:05.07]
+[02:05.16]我明白 我要的爱 会把我宠坏
+[02:15.39]像一个小孩 只懂在你怀里坏
+[02:20.49]你要的爱 不只是依赖
+[02:27.63]要像个大男孩 风吹又日晒
+[02:30.81]生活自由自在
+[02:41.01]
+[03:03.57]我明白 我要的爱 会把我宠坏
+[03:13.83]像一个小孩 只懂在你怀里坏
+[03:18.99]你要的爱 不只是依赖
+[03:26.07]要像个大男孩 风吹又日晒
+[03:29.25]生活自由自在
+[03:34.09]我明白 我要的爱 会把我宠坏
+[03:41.55]像一个小孩 只懂在你怀里 坏
+[03:47.34]你要的爱 不只是依赖
+[03:54.63]要像个大男孩 风吹又日晒
+[03:57.75]生活自由自在
+
+Resp Content:
+{"completion": "虽然经常梦见你\n还是毫无头绪\n外面正在下着雨\n今天是星期几\nBut I don't know\n你去哪里\n\n虽然不曾怀疑你\n还是忐忑不定\n谁是你的那个唯一\n原谅我怀疑自己\n\n我明白 我要的爱 会把我宠坏\n像一个小孩 只懂在你怀里坏\n你要的爱 不只是依赖\n要像个大男孩 风吹又日晒\n生活自由自在\n\n虽然不曾怀疑你\n还是忐忑不定\n谁是你的那个唯一\n原谅我 怀疑自己\n\n我明白 我要的爱 会把我宠坏\n像一个小孩 只懂在你怀里坏\n你要的爱 不只是依赖\n要像个大男孩 风吹又日晒\n生活自由自在\n\n我明白 我要的爱 会把我宠坏\n像一个小孩 只懂在你怀里坏\n你要的爱 不只是依赖\n要像个大男孩 风吹又日晒\n生活自由自在"}
+{"prompt": "情感主题：爱\n情感关系：迷茫\n表达风格：轻快\n背景氛围：星夜\n歌词结构：两段\n节奏感和韵律：明快\n其他关键信息：原唱：戴佩妮\n可能的创作灵感：爱情的迷茫和自由生活"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.000] 作词 : Jeremy Fedryk/Boy Matthews/Andrew Cedar/Jonathan Bach/Hayden Hubers/Chance Peña/Nate Cyphert
+[00:01.000] 作曲 : Jeremy Fedryk/Hayden Hubers
+[00:20.528] I close my eyes
+[00:22.947] But sleep is a danger
+[00:25.368] Thoughts in the night
+[00:27.704] Used to feel safer
+[00:32.076] Until I let you in
+[00:35.205] I was a boy
+[00:37.525] Just trying his best
+[00:39.965] Lowered my guard
+[00:41.703] You took advantage of it
+[00:44.903]
+[00:48.638] Ooh
+[00:52.044] If I could go back
+[00:56.852] Would I redo what we had
+[01:04.190]
+[01:08.505] l'm sure you're fine
+[01:10.770] Cuz you'll heal with time
+[01:13.315] Did it cross your mind
+[01:15.643] That I'm not alright
+[01:18.237] Look into my eyes see all the pain inside
+[01:25.223] From when you were mine
+[01:27.554]
+[01:33.470] Maybe the pain
+[01:35.596] Is God pouring water
+[01:38.117] Into my veins
+[01:40.453] So I can grow stronger
+[01:47.699] And maybe the lows
+[01:50.090] Are given as context
+[01:52.659] So we can appreciate
+[01:55.158] The view from the mountain
+[01:57.886]
+[02:01.324] Ooh
+[02:04.595] If I could go back
+[02:09.547] Would I redo what we had
+[02:17.922]
+[02:21.371] l'm sure you're fine
+[02:23.587] Cuz you'll heal with time
+[02:26.013] Did it cross your mind
+[02:28.285] That I'm not alright
+[02:30.925] Look into my eyes see all the pain inside
+[02:38.011] From when you were mine
+[02:39.507]
+[02:59.518] If I knew the things you would do
+[03:03.725] The scars you would leave
+[03:06.341] The trust I would lose
+[03:08.510] Would I run run run away
+[03:13.248] Would I run run run away
+[03:18.872] If I knew the things you would do
+[03:23.104] The scars you would leave
+[03:25.567] The trust I would lose
+[03:27.903] Would I run run run away
+[03:32.695] Would I run run run away
+[03:35.655]
+[03:38.737] l'm sure you're fine
+[03:41.078] Cuz you'll heal with time
+[03:43.551] Did it cross your mind
+[03:45.886] That I'm not alright
+[03:48.527] Look into my eyes see all the pain inside
+[03:55.347] From when you were mine
+
+Resp Content:
+{"completion": "V1", "prompt": "V2"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.00] 作词 : 厉曼婷
+[00:01.00] 作曲 : 李偲菘/李伟菘
+[00:02.00] 编曲 : 赵俊吉
+[00:03.00] 制作人 : 陈伟伦
+[00:04.00] 改编词 : 梦幻新诛仙手游 项目组
+[00:24.00] 他颠颠又倒倒 是只熊猫
+[00:27.93]有万种的法术 还没学好
+[00:31.56]他一下低他一下高
+[00:33.60]圆圆滚滚不肯倒
+[00:35.58]酒里乾坤他最知道
+[00:38.73]
+[00:39.90]神州中做好事 从不留名号
+[00:44.10]千斤的重担他一肩挑
+[00:47.82]不喊冤也不求饶
+[00:49.71]对情意他肯弯腰
+[00:51.69]醉中仙好汉一条
+[00:54.60]
+[00:55.59]莫说狂 狂人心存厚道
+[00:59.64]莫笑痴 因痴心难找
+[01:03.63]莫怕醉 醉过海阔天高
+[01:07.68]且狂且痴且醉趁年少
+[01:11.34]
+[01:12.03]他圆圆又滚滚 从不烦恼
+[01:15.93]有万种的大道 只认一条
+[01:19.65]他不怕痛 他不怕高
+[01:21.66]来来回回不折腰
+[01:23.73]酒里乾坤他最知道
+[01:27.18]
+[01:27.21]Rap
+[01:27.30]干了吧
+[01:28.44]修练仙术 要放轻松
+[01:29.97]酒过三旬 都别偷溜
+[01:32.04]棒打老虎 鸡吃虫 鸡吃了虫它变成龙
+[01:36.09]这世事无常他不在乎 男儿志酿成壶中酒
+[01:40.26]别看他头大眼圈也黑 熊猫也能做大英雄啊
+[01:44.28]
+[01:44.31]六六六啊 顺五六啊
+[01:46.23]三星照啊 四季财啊
+[01:48.21]七坐骑啊 五队友啊
+[01:50.28]这回封啊 一定中
+[01:52.17]在梦诛啊 星期五
+[01:54.15]开心玩啊 五灵宠
+[01:56.04]来打书啊 六技能啊
+[01:58.23]六技能啊 一定中啊
+[02:00.24]
+[02:00.27]dance break
+[02:15.90]
+[02:20.25]熊猫要当大侠 他不开玩笑
+[02:23.82]千斤的重担他一肩挑
+[02:25.68]不喊冤也不求饶
+[02:27.69]对情意他肯弯腰
+[02:31.20]醉中仙好汉一条
+[02:31.59]
+[02:35.64]莫说狂 狂人心存厚道
+[02:39.66]莫笑痴 因痴心难找
+[02:43.71]莫怕醉 醉过海阔天高
+[02:47.76]且狂且痴且醉在今朝
+[02:49.98]
+[02:53.94]我颠颠又倒倒 好比浪涛
+[02:57.63]这万种的妙趣 试了才晓
+[02:59.73]我一下低 我一下高
+[03:01.59]来来回回显智巧
+[03:02.91] 竹笛 : 赵雪
+[03:04.23] 古筝 : 丁雪儿
+[03:05.55] 和音 : 董嘉鸿/韩宽/张寒冰/赵俊吉/陈伟伦
+[03:06.87] 人声录音 : 许卓恺@Studio21A
+[03:08.19] 乐器录音 : 郝博宁@S.A.G
+[03:09.51] 混音/母带 : 周天澈@Studio21A
+[03:10.83] 制作统筹 : 张乐/张寒冰/潘卉琦
+[03:12.15] 音乐制作 : @陈伟伦音乐工作室
+[03:13.47] 出品人 : 李思睿
+[03:14.80] 出品 : 北京大象无形音乐有限公司/完美世界游戏（梦幻新诛仙手游）
+[03:16.12] 曲OP : Peermusic Pacific Pte.Ltd
+[03:17.44] 曲SP : 北京石刻欣乐文化有限公司
+[03:18.76] 词OP : 爱贝克思香港有限公司
+[03:20.08] 词SP : 爱贝克思（北京）文化传媒有限公司
+
+Resp Content:
+{"completion": "", "prompt": "情感主题：熊猫勇敢、正义 \n情感关系：独立、乐观 \n表达风格：轻松欢快、幽默诙谐 \n背景氛围：奇幻、仙侠 \n歌词结构：4段，每段12句，ABAB押韵 \n节奏感和韵律：轻快的节奏，简单明快的韵律 \n其他关键信息：熊猫做好事，勇敢无惧，为正义而战 \n可能的创作灵感：以熊猫为主角的奇幻故事，表达勇敢、正义和乐观的精神"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.00] 原唱 : 旅行团乐队
+[00:00.22] 作词 : 里则林
+[00:00.45] 作曲 : 孔一蝉
+[00:00.67] 音乐总监：刘卓@维伴音乐
+[00:00.90] 制作人：刘卓@维伴音乐
+[00:01.12] 改编编曲：Terence Teo
+[00:01.35] 键盘：傅一峥@维伴音乐/孙维峰@维伴音乐
+[00:01.57] 吉他：郎梓朔@维伴音乐/赵新博
+[00:01.80] 鼓：邓华龙@维伴音乐
+[00:02.02] 打击乐：黑哥@维伴音乐
+[00:02.25] 贝斯：杨琪@维伴音乐
+[00:02.47] 合声：石行@维伴音乐/马思莹@维伴音乐/邢晏侨@维伴音乐
+[00:02.70] 电脑工程：孙维峰@维伴音乐
+[00:02.92] 合声编写：石行@维伴音乐
+[00:03.15] 演唱设计：石行@维伴音乐
+[00:03.37] 人声编辑：石行@维伴音乐
+[00:03.60] 混音：黄可爱@维伴音乐
+[00:03.82] 音乐统筹：郎梓朔@维伴音乐
+[00:04.05] 制作团队：北京维伴文化传媒有限公司
+[00:04.27] SP：北京中子街声文化发展有限公司
+[00:04.50]如果为你奔跑过的那条长坡
+[00:09.93]仍留着那年奇迹般的雪
+[00:17.25]那一句曾经划破天际的再见
+[00:22.50]也许就不会 像大人一样食言
+[00:27.48]
+[00:42.93]快要拆迁的那一条熟悉的老街
+[00:48.30]如果仍记得我们一起穿梭的身影
+[00:55.68]那一个天高任鸟儿飞的夏天
+[01:01.05]也许就可以让遗憾与你我擦肩
+[01:05.91]
+[01:07.26]就让松枝再次点燃那青烟
+[01:13.71]我们逆流而上 穿过时间
+[01:18.12]
+[01:20.07]在那天空下 在这旷野里
+[01:23.25]撞碎生活的巨浪
+[01:26.52]张开双臂无所畏惧的勇敢
+[01:32.91]在那疾风中 在这暴雨里
+[01:36.09]就算不会有彩虹
+[01:39.30]也想要做肆意 奔跑的风犬
+[01:56.64]
+[01:56.67]过江的索道假若有那么一班
+[02:01.68]只为我们停留 为我们守候 在灯火阑珊
+[02:09.30]来自心底那声冲上云霄的呐喊
+[02:14.46]也许就能一同 运往金黄的对岸
+[02:18.93]
+[02:20.85]就让松枝再次点燃那青烟
+[02:27.27]我们逆流而上 穿过时间
+[02:32.04]
+[02:32.07]在那天空下 在这旷野里
+[02:35.25]撞碎生活的巨浪
+[02:38.49]张开双臂无所畏惧的勇敢
+[02:44.88]在那疾风中 在这暴雨里
+[02:48.09]就算不会有彩虹
+[02:51.27]也想要做肆意 奔跑的风犬
+[02:55.17]
+[03:23.28]在那天空下 在这旷野里
+[03:26.40]撞碎生活的巨浪
+[03:29.67]张开双臂无所畏惧的勇敢
+[03:36.06]在那疾风中 在这暴雨里
+[03:39.27]就算不会有彩虹
+[03:42.51]也想要做肆意 奔跑的风犬
+[03:48.96]也想要做肆意 奔跑的风犬
+[03:55.29]也想要做肆意 奔跑的
+[03:58.44]
+[04:04.53]等你驻足凝望时一定会看见
+[04:09.84]藏在世间万物里的悠悠少年
+[04:17.85]微笑着问你一声
+[04:20.76]啦啦啦啦啦啦
+[04:23.46]此去经年你
+[04:25.56]是否还一样安然
+
+Resp Content:
+{"completion": "此去经年你\n是否还一样安然", "prompt": "情感主题：未给出\n情感关系：未给出\n表达风格：未给出\n背景氛围：未给出\n歌词结构：未给出\n节奏感和韵律：未给出\n其他关键信息：未给出\n可能的创作灵感：未给出"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.000] 作词 : MAX/David Bradley Wilson/Andrew Bazzi/Jake Lawson/Sean Douglas
+[00:01.000] 作曲 : MAX/David Bradley Wilson/Andrew Bazzi/Jake Lawson/Sean Douglas
+[00:03.188] Mmm
+[00:05.193]
+[00:06.082] I hear strings play every time you look my way
+[00:12.383] Don't you know that's what you do oh ooh ooh ooh
+[00:16.134] Feels like oh ooh ooh ooh ooh ooh
+[00:19.464] Make my heart beat double time when you're on me
+[00:25.630] Don't you know that's what you do ooh ooh ooh ooh
+[00:30.264] What you do, what you do
+[00:31.630]
+[00:32.374] Girl you mute out all the nonsense, all the toxic
+[00:35.603] We can talk on any topic and never stop it
+[00:38.969] I know you got other options, a lot of prospects
+[00:42.282] But they only know the single, I want the box set
+[00:46.922] Pushing buttons with your high heels or your high tops
+[00:50.288] Turning heads and giving 'em all feel whether your arm
+[00:54.441] Could be your side alright
+[00:57.383] Might be losing my mind
+[00:58.417]
+[00:59.218] 'Cause I hear strings play every time you look my way
+[01:05.710] Don't you know that's what you do ooh ooh ooh ooh
+[01:09.424] Feels like ooh ooh ooh ooh ooh
+[01:12.744] Make my heart beat double time when you're on me
+[01:18.987] Don't you know that's what you do ooh ooh ooh ooh
+[01:20.693] (Don't you know that's what you do) Yeah yeah
+[01:23.646] What you do, what you do
+[01:25.183]
+[01:25.755] Girl you sound just like the things, walk into my dreams
+[01:28.623] Now you're the start of a movie. I'm watching reruns
+[01:32.350] I want to cut of all my options, push on top there
+[01:35.711] We just stepped outside in public, the camera's popping
+[01:38.346]
+[01:40.283] Hold on to me right now, I'll protect you
+[01:43.601] You came into my life, girl
+[01:45.968] I'll let you feel how my heart's beating
+[01:48.221] You're the one, girl, that I'm feeling
+[01:49.804] I hear symphonies when you're speaking, it's true
+[01:52.268]
+[01:52.592] 'Cause I hear strings play every time you look my way
+[01:58.964] Don't you know that's what you do ooh ooh ooh ooh
+[02:02.760] Feels like ooh ooh ooh ooh ooh
+[02:05.979] Make my heart beat double time when you're on me
+[02:12.349] Don't you know that's what you do ooh ooh ooh ooh
+[02:17.001] What you do, what you do
+[02:18.045]
+[02:23.607] What you do
+
+Resp Content:
+{"completion": "What you do", "prompt": "情感主题：爱情\n情感关系：被吸引\n表达风格：轻快、愉悦\n背景氛围：浪漫、唯美\n歌词结构：连贯\n节奏感和韵律：强烈的节奏感和流行的韵律\n其他关键信息：歌曲表达了主人公对恋人的倾慕之情\n可能的创作灵感：写一首关于被爱吸引的歌曲"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.000] 作词 : Paul Jason Klein/Andrew Goldstein/Jesse St. John/JHart
+[00:01.000] 作曲 : Paul Jason Klein/Andrew Goldstein/Jesse St. John/JHart
+[00:06.569] All my favorite songs are from 2018
+[00:09.795] We flew around the world with our small-town dreams
+[00:13.086] You're a superstar and you wear it so well
+[00:16.177] But nothin' like you in my hoodie double XL
+[00:19.365] Bloodstream full of desert lightnin'
+[00:24.187] Thank God I'm not drivin'
+[00:27.304] A blur the whole way home
+[00:32.399] I still remember, I will forever
+[00:38.275] Backseat secrets we won't ever tell, I miss you double XL
+[00:44.950] Miss Americana and all my friends love ya
+[00:51.220] Back patio at the Bowery Hotel, I miss you double XL
+[01:10.007] You've been goin' out in the glitter and glow
+[01:13.223] Hollywood fadеs and it's startin' to show
+[01:16.395] I'm barely hangin' on and I'm lookin' for help
+[01:19.590] Every night without you hurtin' doublе XL
+[01:22.723] Bloodstream full of desert lightnin'
+[01:27.555] Thank God I'm not drivin'
+[01:30.739] A blur the whole way home
+[01:35.385] I still remember, I will forever
+[01:41.959] Backseat secrets we won't ever tell, I miss you double XL
+[01:48.326] Miss Americana and all my friends love ya
+[01:54.563] Back patio at the Bowery Hotel, I miss you double XL
+[02:12.567] Baby, we'll always have California
+[02:18.594] Half of me will always be waitin' for ya
+[02:26.690] I still remember, I will forever
+[02:32.507] Backseat secrets we won't ever tell, I miss you double XL
+[02:39.239] Miss Americana and all my friends love ya
+[02:45.117] Back patio at the Bowery Hotel, I miss you double XL
+[02:51.444] Baby, we'll always have California
+[02:56.874] Half of me will always be waitin' for ya
+[03:03.287] Baby, we'll always have California
+[03:09.551] Half of me will always be waitin' for ya (I miss you double XL)
+
+Resp Content:
+{"completion": "V1", "prompt": "情感主题：xxx\n情感关系：xxx\n表达风格：xxx\n背景氛围：xxx\n歌词结构：xxx\n节奏感和韵律：xxx\n其他关键信息：xxx\n可能的创作灵感：xxx"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 66, in analyse2json
+    dict = json.loads(result, strict=False)
+  File "E:\python310\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "E:\python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "E:\python310\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 133 (char 132)
+
+Source LRC:
+[00:00.00] 作词 : Marc-André Brunelle
+[00:01.00] 作曲 : Marc-André Brunelle
+[00:13.27]La fanfare frémit au carrefour de ta forme
+[00:24.65]Martellant sa poésie diforme
+[00:35.82]C'est l'eau de vie dans la sève, la conscience qui s'achève
+[00:47.21]Témoin de ta vision, auditeur de ta prison
+[00:55.40]Et quand tu briseras ta cage
+[00:58.37]On ira à la foire
+[01:01.17]On tournera la page et
+[01:03.96]Tu serreras mon corps
+[01:06.71]On partira à la nage
+[01:09.39]On aura la mer à boire
+[01:12.52]Tu manques pas de courage
+[01:15.20]Alors viens jouer dehors
+[01:17.95]Alors viens jouer dehors
+[01:31.98]Je te gribouillerai des cartes comme un grand explorateur
+[01:43.28]Pour les moments ou tu t'écartes, que ça te fasse moins peur
+[01:54.78]Ça t'empêche de rire, ça t'impose le pire
+[02:06.02]Témoin de ta vision, auditeur de ta prison
+[02:14.45]Et quand tu briseras ta cage
+[02:17.60]On ira à la foire
+[02:20.42]On tournera la page et
+[02:23.15]Tu serreras mon corps
+[02:25.95]On partira à la nage
+[02:28.64]On aura la mer à boire
+[02:31.46]Tu manques pas de courage
+[02:34.38]Alors viens jouer dehors
+[02:37.06]Et quand tu briseras ta cage
+[02:40.13]On ira à la foire
+[02:42.93]On tournera la page et
+[02:45.52]Tu serreras mon corps
+[02:48.44]On partira à la nage
+[02:51.21]On aura la mer à boire
+[02:54.06]Tu manques pas de courage
+[02:56.82]Alors viens jouer dehors
+[02:59.59]Alors viens jouer dehors
+
+Resp Content:
+{"completion": "V1", "prompt": "情感主题：才华横溢的音乐家\n情感关系：表达激情和自由\n表达风格：诗意和引人入胜\n背景氛围：乐观和活力\n歌词结构：对话结构\n节奏感和韵律：活泼的节奏和流畅的旋律\n其他关键信息：歌词中提到了"作词"和"作曲"的人，Marc-André Brunelle\n可能的创作灵感：勇敢面对困境，追求自由的精神"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 43, in verify_result
+    raise Exception("The 'prompt' part is missing!")
+Exception: The 'prompt' part is missing!
+
+Source LRC:
+[00:00.00] 作词 : 木兰号AKA陈韦伶
+[00:01.00] 作曲 : 木兰号AKA陈韦伶
+[00:02.00] 编曲 : 吴庆隆
+[00:22.65]说了再见
+[00:24.38]是否就能不再想念
+[00:31.07]说了抱歉
+[00:33.63]是否就能理解了一切
+[00:39.82]眼泪代替你亲吻我的脸
+[00:47.70]我的世界忽然冰天白雪
+[00:54.45]五指之间
+[00:57.44]还残留你的昨天
+[01:03.94]一片一片
+[01:05.88]怎么拼贴完全
+[01:11.38]七月七日晴
+[01:13.00]忽然下起了大雪
+[01:15.32]不敢睁开眼
+[01:17.26]希望是我的幻觉
+[01:19.57]我站在地球边
+[01:21.57]眼睁睁看着雪
+[01:23.63]覆盖你来的那条街
+[01:28.01]七月七日晴
+[01:29.63]黑夜忽然变白天
+[01:31.88]我失去知觉
+[01:33.94]看见相爱的极限
+[01:36.13]我望着地平线
+[01:38.07]天空无际无边
+[01:40.19]听不见你道别
+[01:47.06]
+[02:18.33]五指之间
+[02:20.39]还残留你的昨天
+[02:26.76]一片一片
+[02:28.70]怎么拼贴完全
+[02:34.01]七月七日晴
+[02:35.70]忽然下起了大雪
+[02:37.89]不敢睁开眼
+[02:39.82]希望是我的幻觉
+[02:42.20]我站在地球边
+[02:44.07]眼睁睁看着雪
+[02:46.07]覆盖你来的那条街
+[02:50.70]七月七日晴
+[02:52.26]黑夜忽然变白天
+[02:54.77]我失去知觉
+[02:56.45]看见相爱的极限
+[02:58.76]我望着地平线
+[03:00.63]天空无际无边
+[03:02.01]听不见你道别
+[03:07.25]七月七日晴
+[03:08.88]忽然下起了大雪
+[03:11.32]不敢睁开眼
+[03:13.13]希望是我的幻觉
+[03:15.45]我站在地球边
+[03:17.13]眼睁睁看着雪
+[03:19.63]覆盖你来的那条街
+[03:23.01]七月七日晴
+[03:27.00]我失去知觉
+[03:33.01]天空无际无边
+
+Resp Content:
+{"completion": "说了再见\n是否就能不再想念\n说了抱歉\n是否就能理解了一切\n眼泪代替你亲吻我的脸\n我的世界忽然冰天白雪\n五指之间\n还残留你的昨天\n一片一片\n怎么拼贴完全\n七月七日晴\n忽然下起了大雪\n不敢睁开眼\n希望是我的幻觉\n我站在地球边\n眼睁睁看着雪\n覆盖你来的那条街\n七月七日晴\n黑夜忽然变白天\n我失去知觉\n看见相爱的极限\n我望着地平线\n天空无际无边\n听不见你道别\n五指之间\n还残留你的昨天\n一片一片\n怎么拼贴完全\n七月七日晴\n忽然下起了大雪\n不敢睁开眼\n希望是我的幻觉\n我站在地球边\n眼睁睁看着雪\n覆盖你来的那条街\n七月七日晴\n黑夜忽然变白天\n我失去知觉\n看见相爱的极限\n我望着地平线\n天空无际无边\n听不见你道别\n七月七日晴\n忽然下起了大雪\n不敢睁开眼\n希望是我的幻觉\n我站在地球边\n眼睁睁看着雪\n覆盖你来的那条街\n七月七日晴\n我失去知觉\n天空无际无边"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 43, in verify_result
+    raise Exception("The 'prompt' part is missing!")
+Exception: The 'prompt' part is missing!
+
+Source LRC:
+[00:00.000] 作词 : imase
+[00:00.350] 作曲 : imase
+[00:00.700] 编曲 : ESME MORI
+[00:01.050]どうでもいいような夜だけど
+[00:04.710]響めき煌めきと君も
+[00:09.18]
+[00:25.060]まだ止まった刻む針も
+[00:29.000]入り浸った散らかる部屋も
+[00:33.110]変わらないね 思い出しては
+[00:37.130]2人歳を重ねてた
+[00:41.310]また止まった落とす針を
+[00:45.280]よく流した 聞きあきるほど
+[00:49.430]変わらないね 変わらないで
+[00:53.320]居られたのは君だけが
+[00:57.690]無駄話ではぐらかして
+[01:01.740]触れた先を躊躇うように
+[01:05.680]足踏みして ズレた針を
+[01:10.120]よそに揃い始めてた
+[01:13.180]息が
+[01:14.610]どうでもいいような夜だけど
+[01:18.510]響めき煌めきと君も
+[01:21.800]踊ろう
+[01:22.740]どうでもいいような夜だけど
+[01:27.150]2人刻もう
+[01:31.96]
+[01:46.540]透き通った白い肌も
+[01:50.920]その笑った無邪気な顔も
+[01:55.100]変わらないね 変わらないで
+[01:59.100]居られるのは今だけか
+[02:04.060]見つめるほどに
+[02:06.020]溢れるメモリー
+[02:08.300]浮つく心にコーヒーを
+[02:12.400]乱れた部屋に 掠れたメロディ
+[02:16.420]混ざりあってよ
+[02:19.320]もう一度
+[02:20.360]どうでもいいような夜だけど
+[02:24.130]ときめき色めきと君も
+[02:27.680]踊ろう
+[02:28.520]どうでもいいような夜だけど
+[02:32.900]2人刻もう
+[02:36.670]夜は長い おぼつかない
+[02:40.560]今にも止まりそうなmusic
+[02:44.680]君といたい 溺れてたい
+[02:48.730]明日か来なくたって もういいの
+[02:55.420]どうでもいいような夜だけど
+[02:59.030]響めき煌めきと君も
+[03:02.530]踊ろう
+[03:03.280]どうでもいいような夜だけど
+[03:06.860]あぁ あぁ 愛して
+[03:11.640]どうでもいいから僕だけを
+[03:15.400]ふらつき よろめき ながらも
+[03:18.670]踊ろう
+[03:19.770]どうでもいいような夜だけど
+[03:24.080]2人刻もう
+
+Resp Content:
+{"completion": "透き通った白い肌も\nその笑った無邪気な顔も\n変わらないね 変わらないで\n居られるのは今だけか\n見つめるほどに\n溢れるメモリー\n浮つく心にコーヒーを\n乱れた部屋に 掠れたメロディ\n混ざりあってよ\nもう一度\nどうでもいいような夜だけど\nときめき色めきと君も\n踊ろう\nどうでもいいような夜だけど\n2人刻もう\n夜は長い おぼつかない\n今にも止まりそうなmusic\n君といたい 溺れてたい\n明日か来なくたって もういいの\nどうでもいいような夜だけど\nときめき色めきと君も\n踊ろう\nどうでもいいような夜だけど\nあぁ あぁ 愛して\nどうでもいいから僕だけを\nふらつき よろめき ながらも\n踊ろう\nどうでもいいような夜だけど\n2人刻もう"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.00] 作词 : Ethan Bortnick/Dylan Edmunds
+[00:01.00] 作曲 : Ethan Bortnick/Dylan Edmunds/Bruno Nicolai
+[00:22.17]I used to talk a big game
+[00:25.72]I was a slave to the fame
+[00:29.29]I used to be judgemental
+[00:33.02]Now i judge the judgemental
+[00:35.33]
+[00:35.73]Packin heat it’s the wild wild west
+[00:39.39]behind the screen, I got all the time to flex
+[00:43.73]No one with keys to my psyche
+[00:46.87]But everyone today is just like me
+[00:49.54]ONE BY ONE WE DROP LIKE FLIES
+[00:53.45]PRAISE THE REALM THAT BLURS REAL LIFE
+[00:56.64]IDEAL VERSIONS OF OURSELVES
+[01:00.26]LOCKING US IN PRISON CELLS
+[01:04.06]
+[01:05.23]
+[01:18.05]Dressed to depress
+[01:19.76]Upload photo evidence
+[01:21.19]let’s find you something distracting
+[01:23.10]and feed you reactions
+[01:24.72]
+[01:25.67]why you so tense why you so tense why you so tense
+[01:29.16]Rid of my friends rid of my friends
+[01:32.17]
+[01:32.86]Packin heat, and i'm running from the law
+[01:36.12]Behind the screen, slinging guns and agitprop
+[01:40.64]No one with keys to my psyche
+[01:43.72]But everyone today is just like me
+[01:46.52]ONE BY ONE WE DROP LIKE FLIES
+[01:49.94]PRAISE THE REALM THAT BLURS REAL LIFE
+[01:53.52]IDEAL VERSIONS OF OURSELVES
+[01:57.08]LOCKING US IN PRISON CELLS
+[02:00.52]
+[02:01.15]
+[02:14.01]we can’t live with ourselves (x8)
+
+Resp Content:
+{"completion": "V1", "prompt": "V2"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 43, in verify_result
+    raise Exception("The 'prompt' part is missing!")
+Exception: The 'prompt' part is missing!
+
+Source LRC:
+[00:00.000] 作词 : GALI/芯竹XENZU
+[00:01.000] 作曲 : GALI/芯竹XENZU
+[00:02.000] 编曲 : Chief Maloney
+[00:03.000] 制作人 : Chief Maloney
+[00:17.524]I don’t need no name
+[00:19.045]音乐是可以替我留在
+[00:20.524]这世界上的证据
+[00:21.575]看我仍旧跳动的脉搏
+[00:22.964]Bish I’m ready to die
+[00:24.162]在每个studio night
+[00:25.263]不需要猜疑I’m the illest muthaphuqa alive
+[00:27.723]你们的态度在哪里
+[00:28.800]我看不到被剪裁
+[00:29.991]像身上Sacai的外套被丢超市里卖
+[00:32.338]Bish I don’t give a what
+[00:33.446]成为国王或者乞丐
+[00:34.562]音乐不是体育项目
+[00:35.901]哪里能够比赛
+[00:37.010]看我6岁就懂的道理有人还不明白
+[00:39.382]我懒得跟你比性格比谁才长得可爱
+[00:41.748]我知道有人对号入座但我懒得避开
+[00:44.040]So you was right lil bitsh I’m bad like Miami Vice
+[00:46.574]We the plug
+[00:47.325]What is up
+[00:47.865]你们这些个崽子
+[00:48.912]就像是案板上的肉 粉红色的kawaii
+[00:51.230]爬满了蚂蚁 像早就过期烂掉的派
+[00:53.421]欢迎来到屠宰场
+[00:54.758]“When I sharpen a knife”
+[00:56.082]Weapon在我脑子并不在我手里面握着
+[00:58.327]流出眼眶里的水但并不能叫做落泪
+[01:00.555]面对新的自己哪怕变的越来越陌生
+[01:02.978]Break the laws
+[01:03.595]Break the laws
+[01:04.194]用笔触下的墨水
+[01:05.395]永远都在散发光芒不论无暇或破碎
+[01:07.723]Kill em all Kill em all 是我脑中的voices
+[01:09.980]看这冰冷刺骨的剑刃从半空中落下
+[01:12.325]Now I’m ready for more 把怀疑用力的剁碎
+[01:16.944]HOOK:
+[01:17.294]Starseeds falling on earth got caught in silence
+[01:20.737]With hold my emotions for you since I left
+[01:27.131]通往神圣之光的旅程
+[01:29.781]不需要 他们看不到那世界
+[01:37.019]就算那一切从不存在
+[01:40.364]就算那一切被现实掩埋
+[01:44.431]I am like a little boat floating in the ocean
+[01:49.314]You can’t even imagine
+[01:53.990]Oh the light
+[01:55.750]F!ck it up we dancing all night
+[01:57.794]钻冰求火你还差上几个时代
+[02:00.311]You say it’s LIFE not a 比赛 yuh yuh yuh
+[02:03.961]( Heard me say )
+[02:04.875]Please don’t wake me up
+[02:05.986]Feeling just right
+[02:07.221]像站在世界巅峰再缅怀
+[02:09.695]Tip top motion got me singing like
+[02:11.410]Yuh yuh yuh
+[02:13.750]( Heard me say )
+[02:14.113]Verse：
+[02:14.337]Keep it trill 不想每天都Livin’ in the lies
+[02:16.236]如果我不能继续说唱call it crucified
+[02:18.551]I be killin’ bars
+[02:19.466]把有限的价值变无价
+[02:20.760]像800毫升tequila  一口气根本咽不下( Heard me say )
+[02:23.593]我像根刺
+[02:24.217]卡在你们咽喉
+[02:25.292]Most wanted指向我
+[02:26.430]看深红色的箭头
+[02:27.514]Shout out to Jane
+[02:28.555]这是属于我的Liber Tango
+[02:29.749]听0-100只留下了风
+[02:31.528]FERRARI“Enzo”
+[02:32.861]Rap money amazing从上海到北京we came
+[02:34.964]他们想窥视我 用显微镜看我现在多体面
+[02:36.929]正在运转我的引擎 但还没到过极限
+[02:39.456]不要踩脏我座椅垫 i’m higher than you can imagine
+[02:41.907]赶紧抱头鼠窜吧
+[02:42.956]还没研究出办法
+[02:44.068]面对我
+[02:44.658]像猎豹 狂奔 追赶 扑食着斑马
+[02:46.437]如果怕
+[02:47.187]劝你们最好赶紧躲在家或教室
+[02:50.419]Welcome to my slaughter-house
+[02:57.158]HOOK:
+[02:59.311]Tarseeds falling on earth got caught in silence
+[03:02.011]With hold my emotions for you since I left
+[03:08.373]通往神圣之光的旅程
+[03:10.847]不需要 他们看不到那世界
+[03:18.199]就算那一切从不存在
+[03:21.324]就算那一切被现实掩埋
+[03:25.645]I am like a little boat floating in the ocean
+[03:30.294]You can’t even imagine
+[03:35.138]Oh the light
+[03:39.225]F!ck it up we dancing all night
+[03:42.668]钻冰求火你还差上几个时代
+[03:45.845]You say it’s LIFE not a 比赛 yuh yuh yuh
+[03:50.881]Heard me say
+[03:52.401]Please don’t wake me up
+[03:53.856]Feeling just right
+[03:55.550]像站在世界巅峰再缅怀
+[03:58.917]Tip top motion got me singing like
+[04:04.064]“You heard me say”
+[04:05.392]
+[04:06.147] 和声 : GALI/芯竹XENZU/Chief Maloney
+[04:06.902] 混音师 : Yáng Tan @Young Jewels Studios (Los Angeles)
+[04:07.657] 母带 : Chris Gehringer
+[04:08.412] 录音师 : Jun_Lee
+
+Resp Content:
+{"completion": "作词 : GALI/芯竹XENZU\n作曲 : GALI/芯竹XENZU\n编曲 : Chief Maloney\n制作人 : Chief Maloney\nI don’t need no name\n音乐是可以替我留在\n这世界上的证据\n看我仍旧跳动的脉搏\nBish I’m ready to die\n在每个studio night\n不需要猜疑I’m the illest muthaphuqa alive\n你们的态度在哪里\n我看不到被剪裁\n像身上Sacai的外套被丢超市里卖\nBish I don’t give a what\n成为国王或者乞丐\n音乐不是体育项目\n哪里能够比赛\n看我6岁就懂的道理有人还不明白\n我懒得跟你比性格比谁才长得可爱\n我知道有人对号入座但我懒得避开\nSo you was right lil bitsh I’m bad like Miami Vice\nWe the plug\nWhat is up\n你们这些个崽子\n就像是案板上的肉 粉红色的kawaii\n爬满了蚂蚁 像早就过期烂掉的派\n欢迎来到屠宰场\n“When I sharpen a knife”\nWeapon在我脑子并不在我手里面握着\n流出眼眶里的水但并不能叫做落泪\n面对新的自己哪怕变的越来越陌生\nBreak the laws\nBreak the laws\n用笔触下的墨水\n永远都在散发光芒不论无暇或破碎\nKill em all Kill em all 是我脑中的voices\n看这冰冷刺骨的剑刃从半空中落下\nNow I’m ready for more 把怀疑用力的剁碎\nStarseeds falling on earth got caught in silence\nWith hold my emotions for you since I left\n通往神圣之光的旅程\n不需要 他们看不到那世界\n就算那一切从不存在\n就算那一切被现实掩埋\nI am like a little boat floating in the ocean\nYou can’t even imagine\nOh the light\nF!ck it up we dancing all night\n钻冰求火你还差上几个时代\nYou say it’s LIFE not a 比赛 yuh yuh yuh\nPlease don’t wake me up\nFeeling just right\n像站在世界巅峰再缅怀\nTip top motion got me singing like\nKeep it trill 不想每天都Livin’ in the lies\n如果我不能继续说唱call it crucified\nI be killin’ bars\n把有限的价值变无价\n像800毫升tequila 一口气根本咽不下\n我像根刺\n卡在你们咽喉\nMost wanted指向我\n看深红色的箭头\nShout out to Jane\n这是属于我的Liber Tango\n听0-100只留下了风\nFERRARI“Enzo”\nRap money amazing从上海到北京we came\n他们想窥视我 用显微镜看我现在多体面\n正在运转我的引擎 但还没到过极限\n不要踩脏我座椅垫 i’m higher than you can imagine\n赶紧抱头鼠窜吧\n还没研究出办法\n面对我\n像猎豹 狂奔 追赶 扑食着斑马\n如果怕\n劝你们最好赶紧躲在家或教室\nWelcome to my slaughter-house\n和声 : GALI/芯竹XENZU/Chief Maloney\n混音师 : Yáng Tan @Young Jewels Studios (Los Angeles)\n母带 : Chris Gehringer\n录音师 : Jun_Lee"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.00] 作词 : G. GIORGILLI/R. Santini/D. Pignataro/R. Ruiu
+[00:01.00] 作曲 : Roberta Ruiu/GIOVANBATTISTA GIORGILLI (COMPOSER)/DAVIDE PIGNATARO (LYRICIST)/ROBERTO SANTINI (COMPOSER)
+[00:14.29]I know
+[00:16.49]It is hard to fall in love
+[00:20.84]When you feel blue
+[00:23.35]Deep inside your heart
+[00:28.14]I'm sure
+[00:30.34]You got so much love to give
+[00:34.69]Believe in me
+[00:37.25]I can let it shine again
+[00:42.09]Surrender
+[00:44.23]Baby please surrender
+[00:47.68]I will be so tender
+[00:51.15]If you trust in me
+[00:55.96]Pretender
+[00:58.04]I won't be a pretender
+[01:01.54]Baby please surrender
+[01:05.01]You can trust in me
+[01:09.97]You know
+[01:11.99]These are not only words (not only words)
+[01:16.55]My love is true
+[01:18.94]Look into my eyes
+[01:23.68]And so
+[01:25.93]If you wanna feel the same
+[01:30.22]Believe in me
+[01:33.25]I will let it shine again
+[01:37.82]Surrender
+[01:39.66]Baby please surrender
+[01:43.36]I will be so tender
+[01:46.78]If you trust in me
+[01:51.67]Pretender
+[01:53.76]I won't be a pretender
+[01:57.19]Baby please surrender you can trust in me
+[02:05.17]RAP: I spend my nights and days
+[02:07.63]Trying to do my best and I confess
+[02:09.98]I guess that our love aren't gonna be less
+[02:13.05]And must believe my promises’ days are true
+[02:16.42]Draw the tears from your eyes no more stupid lies for you
+[02:20.05]Believe in me you can trust in me
+[02:23.34]Believe in me you can trust in me
+[02:26.62]Believe in me you can trust in me
+[02:30.14]You can trust in me
+[02:33.41]Surrender
+[02:35.50]Baby please surrender
+[02:38.97]I will be so tender
+[02:42.36]If you trust in me
+[02:47.34]Pretender
+[02:49.54]I won't be a pretender
+[02:52.81]Baby please surrender
+[02:56.40]You can trust in me you can trust in me
+
+Resp Content:
+{"completion": "V1", "prompt": "情感主题：xxxx\n情感关系：xxxx\n表达风格：xxxx\n背景氛围：xxxx\n歌词结构：xxxx\n节奏感和韵律：xxxx\n其他关键信息：xxxx\n可能的创作灵感：xxxx"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.000] 作词 : Lewis Marc Capaldi/Benjamin Alexander Kohn/Peter Norman Cullen Kelleher/Thomas Andrew Searle Barnes
+[00:01.000] 作曲 : Lewis Marc Capaldi/Benjamin Alexander Kohn/Peter Norman Cullen Kelleher/Thomas Andrew Searle Barnes
+[00:09.647]I'm going under and this time I fear there's no one to save me
+[00:18.671]This all or nothing really got a way of driving me crazy
+[00:25.694]I need somebody to heal
+[00:28.447]Somebody to know
+[00:30.703]Somebody to have
+[00:32.959]Somebody to hold
+[00:35.215]It's easy to say
+[00:37.722]But it's never the same
+[00:39.978]I guess I kinda liked the way you numbed all the pain
+[00:44.239]Now the day bleeds
+[00:46.495]Into nightfall
+[00:48.751]And you're not here
+[00:50.505]To get me through it all
+[00:53.012]I let my guard down
+[00:55.269]And then you pulled the rug
+[00:57.775]I was getting kinda used to being someone you loved
+[01:04.293]I'm going under and this time I fear there's no one to turn to
+[01:13.567]This all or nothing way of loving got me sleeping without you
+[01:20.336]Now, I need somebody to know
+[01:23.352]Somebody to heal
+[01:25.609]Somebody to have
+[01:27.618]Just to know how it feels
+[01:30.128]It's easy to say but it's never the same
+[01:34.641]I guess I kinda liked the way you helped me escape
+[01:38.902]Now the day bleeds
+[01:41.409]Into nightfall
+[01:43.414]And you're not here
+[01:45.670]To get me through it all
+[01:47.926]I let my guard down
+[01:50.182]And then you pulled the rug
+[01:52.693]I was getting kinda used to being someone you loved
+[01:58.216]And I tend to close my eyes when it hurts sometimes
+[02:04.988]I fall into your arms
+[02:09.501]I'll be safe in your sound 'til I come back around
+[02:15.516]For now the day bleeds
+[02:18.023]Into nightfall
+[02:20.554]And you're not here
+[02:22.561]To get me through it all
+[02:24.816]I let my guard down
+[02:27.322]And then you pulled the rug
+[02:29.829]I was getting kinda used to being someone you loved
+[02:34.095]But now the day bleeds
+[02:36.597]Into nightfall
+[02:38.603]And you're not here
+[02:40.909]To get me through it all
+[02:43.285]I let my guard down
+[02:45.294]And then you pulled the rug
+[02:48.055]I was getting kinda used to being someone you loved
+
+Resp Content:
+{"completion": "V1", "prompt": "{'情感主题': '失恋', '情感关系': '痛苦离别', '表达风格': '抒情', '背景氛围': '伤感', '歌词结构': '对比', '节奏感和韵律': '慢节奏、优美的旋律', '其他关键信息': '他们之间的关系已经结束，主人公陷入了失恋的痛苦中', '可能的创作灵感': '通过音乐来宣泄内心的伤痛和失落感'}"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 66, in analyse2json
+    dict = json.loads(result, strict=False)
+  File "E:\python310\lib\json\__init__.py", line 359, in loads
+    return cls(**kw).decode(s)
+  File "E:\python310\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 2 column 128 (char 3290)
+
+Source LRC:
+[00:00.000] 作词 : Jordan Ward/Alexander Ben-Abdallah/Ricardo Valdez Valentine Jr
+[00:01.000] 作曲 : Jordan Ward/Alexander Ben-Abdallah/Ricardo Valdez Valentine Jr
+[00:03.387] Oh, yeah
+[00:05.565] Oh, yeah
+[00:06.444]
+[00:07.733] It's every year more energy
+[00:11.974] It's blurrin' words in front of me
+[00:16.028] Some dryin' out prematurely
+[00:20.010] Ooh, ooh
+[00:23.828] When the heat turns up, it can break somethin' fragile
+[00:27.720] You could burn yourself or withstand with a callous
+[00:31.783] Not the only way but it always seems to the real world
+[00:37.382]
+[00:38.631] Held it down for ten summers like Mustard, baby
+[00:43.373] With me or not, it's gon' come again
+[00:47.506] New kids jumpin' out the senior stands (Jumpin' out)
+[00:50.940] And they made a new wave, they gettin' more advanced (New wave, they gettin')
+[00:55.060] I done seen this whole town wiped clean (Wiped clean)
+[00:58.884] Condos bury memories of my teens (Of my teens)
+[01:02.869] I done seen this whole town get geeked (I done seen this whole town)
+[01:06.105] Switched to weed from Molly (Switched to weed for Molly)
+[01:08.203] For the better probably (Hey, yeah)
+[01:10.960] Held it down for ten summers like Mustard, baby
+[01:15.080] Held it down for ten summers I was just a baby
+[01:19.408]
+[01:21.105] Fires and rollin' franchises
+[01:23.179] Change life before my damn eyes
+[01:25.183] I need some bands on standby (Yeah)
+[01:29.193] Far from the waves and sand, I (Yeah)
+[01:31.244] I need a rock to stand by (By)
+[01:33.248] I need some bands on standby (By)
+[01:35.454]
+[01:36.734] In Atlanta with my bro'dem
+[01:38.080] The only thing constant is change, I was put here to show them
+[01:40.615] Even if I only get this show then, emerge from the fire like ashes, I'm floatin'
+[01:44.361] Fall to the ground, it's a rebirth, phoenix, I mean it
+[01:46.862] It was offset, now the scene is the greenest
+[01:48.915] Fruits of my labor just needed some sun
+[01:50.633] Grounded myself but I wanted to run
+[01:51.334] I done seen this whole town wiped clean (Oh)
+[01:54.459] That's when everybody leave
+[01:56.260] Made a spot for me (Yeah), no, it ain't that hard to see
+[02:00.508] I've been upside down, still I turned it all around
+[02:03.342]
+[02:03.766] Held it down for ten summers like Mustard, baby
+[02:08.066] With me or not, it's gon' come again (Come again)
+[02:12.178] New kids jumpin' out the senior stands (Yeah, jumpin' out the senior)
+[02:15.445] And they made a new wave, they gettin' more advanced (Made a new wave)
+[02:19.796] I done seen this whole town wiped clean (Town wiped clean)
+[02:23.510] Condos bury memories of my teens (Of my teens)
+[02:27.522] Ooh, I done seen this whole town get geeked (I done seen this whole town)
+[02:30.596] Switched to weed from Molly (Switched to weed for Molly)
+[02:32.746] For the better probably (Hey, yeah)
+[02:35.733] Held it down for ten summers like Mustard, baby
+[02:39.782] Held it down for ten summers I was just a baby
+[02:42.025]
+[02:45.504] Fires and rollin' franchises
+[02:47.833] Change life before my damn eyes
+[02:49.890] I need some bands on standby
+[02:53.990] Far from the waves and sand, I
+[02:55.893] I need a rock to stand by
+[02:57.954] I need some bands on standby
+
+Resp Content:
+{"completion": "[00:03.387] Oh, yeah\n[00:05.565] Oh, yeah\n[00:06.444]\n[00:07.733] It's every year more energy\n[00:11.974] It's blurrin' words in front of me\n[00:16.028] Some dryin' out prematurely\n[00:20.010] Ooh, ooh\n[00:23.828] When the heat turns up, it can break somethin' fragile\n[00:27.720] You could burn yourself or withstand with a callous\n[00:31.783] Not the only way but it always seems to the real world\n[00:37.382]\n[00:38.631] Held it down for ten summers like Mustard, baby\n[00:43.373] With me or not, it's gon' come again\n[00:47.506] New kids jumpin' out the senior stands (Jumpin' out)\n[00:50.940] And they made a new wave, they gettin' more advanced (New wave, they gettin')\n[00:55.060] I done seen this whole town wiped clean (Wiped clean)\n[00:58.884] Condos bury memories of my teens (Of my teens)\n[01:02.869] I done seen this whole town get geeked (I done seen this whole town)\n[01:06.105] Switched to weed from Molly (Switched to weed for Molly)\n[01:08.203] For the better probably (Hey, yeah)\n[01:10.960] Held it down for ten summers like Mustard, baby\n[01:15.080] Held it down for ten summers I was just a baby\n[01:19.408]\n[01:21.105] Fires and rollin' franchises\n[01:23.179] Change life before my damn eyes\n[01:25.183] I need some bands on standby (Yeah)\n[01:29.193] Far from the waves and sand, I (Yeah)\n[01:31.244] I need a rock to stand by (By)\n[01:33.248] I need some bands on standby (By)\n[01:35.454]\n[01:36.734] In Atlanta with my bro'dem\n[01:38.080] The only thing constant is change, I was put here to show them\n[01:40.615] Even if I only get this show then, emerge from the fire like ashes, I'm floatin'\n[01:44.361] Fall to the ground, it's a rebirth, phoenix, I mean it\n[01:46.862] It was offset, now the scene is the greenest\n[01:48.915] Fruits of my labor just needed some sun\n[01:50.633] Grounded myself but I wanted to run\n[01:51.334] I done seen this whole town wiped clean (Oh)\n[01:54.459] That's when everybody leave\n[01:56.260] Made a spot for me (Yeah), no, it ain't that hard to see\n[02:00.508] I've been upside down, still I turned it all around\n[02:03.342]\n[02:03.766] Held it down for ten summers like Mustard, baby\n[02:08.066] With me or not, it's gon' come again (Come again)\n[02:12.178] New kids jumpin' out the senior stands (Yeah, jumpin' out the senior)\n[02:15.445] And they made a new wave, they gettin' more advanced (Made a new wave)\n[02:19.796] I done seen this whole town wiped clean (Town wiped clean)\n[02:23.510] Condos bury memories of my teens (Of my teens)\n[02:27.522] Ooh, I done seen this whole town get geeked (I done seen this whole town)\n[02:30.596] Switched to weed from Molly (Switched to weed for Molly)\n[02:32.746] For the better probably (Hey, yeah)\n[02:35.733] Held it down for ten summers like Mustard, baby\n[02:39.782] Held it down for ten summers I was just a baby\n[02:42.025]\n[02:45.504] Fires and rollin' franchises\n[02:47.833] Change life before my damn eyes\n[02:49.890] I need some bands on standby\n[02:53.990] Far from the waves and sand, I\n[02:55.893] I need a rock to stand by\n[02:57.954] I need some bands on standby",
+ "prompt": "情感主题：生活的变迁\n情感关系：面对困境坚守\n表达风格：深情而坚定\n背景氛围：成长与逆境\n歌词结构：ABAB\n节奏感和韵律：流畅而动感\n其他关键信息：反映岁月的变迁及自身的坚守\n可能的创作灵感：生活中的坚定与奋斗"},
+ "title": "生成JSON对象"
+}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.00] 作词 : Michelle Lewis/Paul Davis/Ryan Clapham
+[00:01.00] 作曲 : Michelle Lewis/Paul Davis/Ryan Clapham
+[00:21.98]I’m hooked on you honey
+[00:26.23]Never letting you go
+[00:30.77]Cus I got desire
+[00:35.29]It’s starting to show
+[00:37.24]
+[00:39.60]I’m holding you tightly
+[00:43.61]Bathing inside your glow
+[00:47.87]Cus I got a fire
+[00:51.58]I feel it starting to grow
+[00:53.95]
+[00:55.63]Here’s the thing
+[00:57.76]I cant stop thinking about you
+[01:01.77]Can’t stop thinking about you
+[01:06.36]Here just thinking about you
+[01:10.05]Till the stars burn blue
+[01:13.44]
+[01:22.26]Call it sad call it funny
+[01:26.71]I don’t care to know
+[01:30.75]Cus I got desire
+[01:35.12]And I can’t let it you go
+[01:36.98]
+[01:38.51]Here’s the thing
+[01:40.17]I cant stop thinking about you
+[01:44.88]Can’t stop thinking about you
+[01:48.94]Here just thinking about you
+[01:52.92]Till the stars burn blue
+[01:56.11]Let me back in your head
+[01:58.79]And your heart again
+[02:00.71]I been thinking bout you
+[02:02.62]Baby tell me when
+[02:04.48]
+[02:04.82]I get so carried away
+[02:06.80]Lookin in your eyes
+[02:08.83]You you spark a fire and
+[02:11.09]I just cant deny
+[02:13.09]
+[02:14.13]Cus it’s you I’m thinking of
+[02:17.03]Heres the thing
+[02:18.95]I cant stop thinking about you
+[02:23.26]Can’t stop thinking about you
+[02:27.73]Here just thinking about you
+[02:31.50]Till the stars burn blue
+
+Resp Content:
+{"completion": "V1", "prompt": "情感主题：爱情\n情感关系：痴迷、渴望\n表达风格：浪漫、梦幻\n背景氛围：温暖、充满火焰\n歌词结构：以思念某人为主线，以叙述式和重复形式为主\n节奏感和韵律：舒缓、柔和\n其他关键信息：作者为Michelle Lewis、Paul Davis和Ryan Clapham\n可能的创作灵感：表达对某人的痴迷和渴望，以爱情为主题"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.000] 作词 : Adam Levine/Benjamin Levin/Ammar Malik/Dan Omelio/Shellback/Cameron Thomaz
+[00:00.000] 作曲 : Adam Levine/Benjamin Levin/Ammar Malik/Dan Omelio/Shellback/Cameron Thomaz
+[00:00.000]作曲 : Adam Levine/Benjamin Levin/Ammar Malik/Dan Omelio/Shellback/Cameron Thomaz
+[00:00.360]作词 : Adam Levine/Benjamin Levin/Ammar Malik/Dan Omelio/Shellback/Cameron Thomaz
+[00:01.080]I'm at a payphone trying to call home
+[00:04.280]All of my change I spent on you
+[00:08.590]Where have the times gone
+[00:10.670]Baby it's all wrong, where are the plans we made for two?
+[00:17.540]Yeah, I, I know it's hard to remember
+[00:19.880]The people we used to be
+[00:23.130]It's even harder to picture
+[00:25.300]That you're not here next to me
+[00:27.520]You say it's too late to make it
+[00:29.890]But is it too late to try?
+[00:31.880]And in our time that you wasted
+[00:33.600]All of our bridges burned down
+[00:35.830]I've wasted my nights
+[00:37.960]You turned out the lights
+[00:40.970]Now I'm paralyzed
+[00:42.700]Still stuck in that time when we called it love
+[00:47.350]But even the sun sets in paradise
+[00:50.550]I'm at a payphone trying to call home
+[00:57.080]All of my change I spent on you
+[01:00.790]Where have the times gone
+[01:03.740]Baby it's all wrong, where are the plans we made for two?
+[01:09.400]If happy ever after did exist
+[01:11.130]I would still be holding you like this
+[01:18.330]All those fairytales are full of ****
+[01:22.540]One more ******* love song i'll be sick
+[01:25.530]You turned your back on tomorrow
+[01:30.730]Cause you forgot yesterday
+[01:31.700]I gave you my love to borrow
+[01:34.650]But you just gave it away
+[01:37.390]You can't expect me to be fine
+[01:39.730]I don't expect you to care
+[01:41.770]I know I've said it before
+[01:43.590]But all of our bridges burned down
+[01:45.780]I've wasted my nights
+[01:48.860]You turned out the lights
+[01:51.030]Now I'm paralyzed
+[01:53.270]Still stuck in that time when we called it love
+[01:57.380]But even the sun sets in paradise
+[02:00.170]I'm at a payphone trying to call home
+[02:06.670]All of my change I spent on you
+[02:10.580]Where have the times gone
+[02:12.860]Baby it's all wrong, where are the plans we made for two?
+[02:19.300]If happy ever after did exist
+[02:21.050]I would still be holding you like this
+[02:28.100]All those fairytales are full of *******t
+[02:32.470]One more ******* love song i'll be sick
+[02:36.720]Now I'm at a payphone...
+[02:39.160]Wiz Khalifa
+[02:39.470]Man **** that *******t
+[02:40.380]I'll be out spending all this money while you sitting round
+[02:42.230]Wondering why it wasn't you who came up from nothing
+[02:44.010]Made it from the bottom
+[02:45.020]Now when you see me I'm stunning
+[02:46.490]And all of my cars start with the push of a button
+[02:49.270]Telling me the chances since I blew up or whatever you call it
+[02:50.890]Switched the number to my phone
+[02:52.590]So you never could call it
+[02:53.700]Don't need my name on my show
+[02:55.680]You can tell it I'm ballin'
+[02:55.980]Swish, what a shame could have got picked
+[02:58.050]Had a really good game but you missed your last shot
+[02:59.890]So you talk about who you see at the top
+[03:02.670]Or what you could've saw
+[03:02.770]But sad to say it's over for
+[03:04.190]Phantom pulled up valet open doors
+[03:05.460]Wiz like go away, got what you was looking for
+[03:07.250]Now it's me who they want
+[03:09.820]So you can go and take that little piece of *******t with you
+[03:11.600]I'm at a payphone trying to call home
+[03:16.910]All of my change I spent on you
+[03:20.260]Where have the times gone
+[03:22.580]Baby it's all wrong, where are the plans we made for two?
+[03:28.950]If happy ever after did exist
+[03:33.510]I would still be holding you like this
+[03:37.990]All these fairytales are full of *******t
+[03:42.240]One more ******* love song i'll be sick
+[03:45.330]Now I'm at a Payphone
+
+Resp Content:
+{"completion": "Now I'm at a Payphone", "prompt": "情感主题：回忆过去的爱情\n情感关系：感叹与失望\n表达风格：深情而又悲伤\n背景氛围：忧伤的夜晚\n歌词结构：由Adam Levine演唱，以回忆往事为主线，表达对过去爱情的思念和失望\n节奏感和韵律：慢节奏、词调抑扬顿挫\n其他关键信息：Payphone是用来打电话的公共电话亭的名字，歌词中将它作为回忆往事的象征\n可能的创作灵感：过去的爱情回忆、失望和思念的情感表达"}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[]
+Resp Content:
+{"completion": "", "prompt": ""}
+--------------------------------------------------------------------------------
+Error: Traceback (most recent call last):
+  File "E:\AI\mb-lyric2ftd\app.py", line 67, in analyse2json
+    verify_result(dict)
+  File "E:\AI\mb-lyric2ftd\app.py", line 45, in verify_result
+    raise Exception("The 'completion' is too short (<30).")
+Exception: The 'completion' is too short (<30).
+
+Source LRC:
+[00:00.000] 作词 : Vicky宣宣
+[00:01.000] 作曲 : Vicky宣宣
+[00:02.000] 编曲 : Yusei
+[00:03.115]混音：TUJZ
+[00:13.196]Sometimes the world is just a mess（ooh）
+[00:19.535]Deep down there‘s nothing I regret
+[00:25.801]You can't stop things happening
+[00:29.057]Like you can't stop the lightning
+[00:32.241]But you swallowed me and set me free
+[00:37.608]Roses bloom
+[00:40.891]everything sucks but you
+[00:44.003]Heartbeat boom
+[00:47.229]Bumping just for you
+[00:50.622]And it's true, waiting for you
+[00:53.614]You’re my everything, is brand new
+[00:56.775]Roses bloom
+[01:00.022]Just for you
+[01:04.425]People still walking and passing by
+[01:10.814]Nobody knows my heart is on fire
+[01:17.010]I'm no longer frightening
+[01:20.256]Cuz you‘re my destiny
+[01:23.624]So go and live a better life
+[01:28.893]Roses bloom
+[01:32.061]everything sucks but you
+[01:35.255]Heart goes boom
+[01:38.488]Bumping just for you
+[01:41.803]And it's true, waiting for you
+[01:44.864]You’re my everything, I can't loose
+[01:48.006]Roses bloom
+[01:51.289]Just for you
+[01:54.708]It goes
+[01:55.682]boom boom, boom boom（Mmm）
+[01:58.848]boom boom, boom boom
+[02:00.855]My heart goes
+[02:02.267]boom boom, boom boom
+[02:05.274]boom boom, boom boom
+[02:07.295]Roses bloom
+[02:10.492]everything sucks but you（everything sucks but you）
+[02:13.758]Heartbeat boom
+[02:16.979]Bumping just for you（just for you）
+[02:20.334]And it's true, waiting for you
+[02:23.327]You’re my everything, is brand new
+[02:26.511]Roses bloom
+[02:29.736]Just for you
+[02:45.900]it goes
+[02:46.851]boom boom, boom boom
+[02:48.895]everything sucks but you, ooh
+[02:53.345]boom boom, boom boom
+[02:55.321]bumping just for you
+[02:58.560]roses bloom (boom boom, boom boom)
+[03:04.901]roses bloom (boom boom, boom boom)
+
+Resp Content:
+{"completion": "Vicky宣宣", "prompt": "情感主题：深情的表达 | 情感关系：无法停止对你的思念 | 表达风格：直接而真诚 | 背景氛围：浪漫而温暖 | 歌词结构：连续而流畅 | 节奏感和韵律：强烈而动感 | 其他关键信息：歌曲以“Roses bloom”为主要主题，传达对你的深情爱意 | 可能的创作灵感：描写爱情的美好与甜蜜的时刻"}

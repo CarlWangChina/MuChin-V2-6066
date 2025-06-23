@@ -1,0 +1,2 @@
+from Code_for_Experiment.Metrics.music_understanding_model.apex.apex.multi_tensor_apply.multi_tensor_apply import MultiTensorApply
+multi_tensor_applier = MultiTensorApply(2048 * 32)

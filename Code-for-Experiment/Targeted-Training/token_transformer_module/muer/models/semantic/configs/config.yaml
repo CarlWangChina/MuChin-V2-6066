@@ -1,0 +1,85 @@
+semantic:
+  encoder:
+    name: "mert"
+    pretrained_model: "m-a-p/MERT-v1-330M"
+    features_rate: 75
+    features_dim: 1024
+    window_size: 10
+    num_channels: 1
+  tokenizer:
+    name: "rvq"
+    kmeans:
+      n_dim: ${...encoder.features_dim}
+      num_clusters: 8000
+      cluster_batch_size: 1024
+      n_init: "auto"
+      random_state: 42
+      max_iter: 300
+      pretrained_joblib: "melody_tokenizer.joblib"
+      pretrained_joblib_url: "https://ama-prof-divi-ai-public.s3.us-west-1.amazonaws.com/checkpoints/semantic/melody_tokenizer.joblib"
+      pretrained_joblib_sha256: "8e099e168e48c17d7b0af23ccb2d25dbec232f714100359e5517b860ebe6c50b"
+    rvq:
+      num_quantizers: 32
+      n_dim: ${...encoder.features_dim}
+      codebook_size: 512
+      similarity: "euclidean"
+      learnable_codebook: true
+      pretrained_model: "mert-rvq-d512-q32.ckpt"
+      pretrained_model_url: "https://ama-prof-divi-ai-public.s3.us-west-1.amazonaws.com/checkpoints/mert-rvq/mert-rvq-d512-q32.ckpt"
+      pretrained_model_sha256: "d491cecac0646f45a40ca531a57d6a8110a062c349319bee005ebb61c1dbfc28"
+  chords_compressor:
+    n_dim: ${..encoder.features_dim}
+    compress_ratio: 15
+  duration_predictor:
+    time_unit_hz: ${..encoder.features_rate}
+    default_seq_len_ratio: 1.1
+    max_seq_len: 4096
+    max_duration: 600 # 8 seconds In 75-Hz frames
+    hidden_dim: 1024
+    encoder:
+      num_layers: 4
+      num_heads: 8
+      dropout: 0.1
+    decoder:
+      num_layers: 4
+      num_heads: 8
+      dropout: 0.1
+      generation_mode: "greedy"
+      top_p: 0.9
+      temperature: 0.6
+  chords_generator:
+    num_layers: 12
+    num_heads: 8
+    dropout: 0.1
+    max_seq_len: 4096
+    hidden_dim: 3072
+    generation_mode: "sample_top_p"
+    top_p: 0.9
+    temperature: 0.6
+    prompt_mlp:
+        num_layers: 2
+        activation: "ReLU"
+  melody_generator:
+    feature_rate: ${..encoder.features_rate}
+    window_size_in_seconds: 2
+    num_layers: 12
+    num_heads: 8
+    dropout: 0.1
+    max_seq_len: 4096
+    hidden_dim: 3072
+    generation_mode: "sample_top_p"
+    top_p: 0.9
+    temperature: 0.6
+    chords_encoder:
+      dim: 512
+      num_layers: 8
+      num_heads: 8
+      dropout: 0.1
+      max_seq_len: ${...chords_generator.max_seq_len}
+      hidden_dim: 2048
+      generation_mode: "sample_top_p"
+      top_p: 0.9
+      temperature: 0.6
+    prompt_mlp:
+      num_layers: 2
+      activation: "ReLU"

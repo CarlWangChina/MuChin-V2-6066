@@ -1,0 +1,12 @@
+PATH=/nfs/home/carl/miniconda3/envs/music-dit/bin:/nfs/home/carl/miniconda3/condabin:/home/carl/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/local/cuda/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
+NCCL_PROTO=SIMPLE
+NCCL_SOCKET_IFNAME=bond0
+NCCL_IB_HCA=mlx5_0
+NCCL_P2P_LEVEL=PHB
+NCCL_DEBUG=INFO
+NCCL_DEBUG_FILE=/tmp/nccl_debug.log
+MASTER_ADDR=214.3.30.1
+MASTER_PORT=50288
+LANG=en_US.UTF-8
+HOME=/nfs/home/carl
+CUTLASS_PATH=/usr/local/cutlass

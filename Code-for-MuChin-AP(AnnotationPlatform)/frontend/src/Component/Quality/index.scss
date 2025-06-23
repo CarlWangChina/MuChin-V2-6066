@@ -1,0 +1,51 @@
+.long_btn {
+  margin: 30px 0px;
+  font-weight: bold;
+}
+
+.card_qa {
+  width: 1300px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+  background-color: rgb(244, 247, 247);
+}
+
+.music_form {
+  width: 1300px;
+}
+
+.score_input {
+  width: 300px;
+}
+
+.qa_ui_title {
+  margin: 0;
+  flex: 1;
+}
+
+.qa_ui_item_container {
+  margin-bottom: 10px;
+}
+
+.source_tip {
+  margin-bottom: 10px;
+  color: #FF0000;
+}
+
+.check_btn_tip {
+  margin-left: 20px;
+  color: #FF0000;
+  font-size: small;
+}
+
+.check_card_extra_li {
+  list-style: none;
+  margin: 10px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.check_card_extra_li_btn_tip {
+  margin-left: 20px;
+  font-size: large;
+}

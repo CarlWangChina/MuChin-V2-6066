@@ -1,0 +1,6 @@
+encodec:
+    pretrained_model: "facebook/encodec_48khz"
+    batch_size: 4
+    normalize_loudness: True
+    input_loudness: -12.0
+    output_loudness: -16.0

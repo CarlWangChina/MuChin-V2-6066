@@ -1,0 +1,35 @@
+@import '~antd/dist/reset.css';
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  width: 500px;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: 30px 0px;
+}
+
+.ant-select:not(.ant-select-customize-input) .ant-select-selector {
+  background: rgb(244, 247, 247)
+}
+
+.ant-select-dropdown {
+  background: rgb(244, 247, 247)
+}
+
+.ant-input {
+  background-color: rgb(244, 247, 247);
+}

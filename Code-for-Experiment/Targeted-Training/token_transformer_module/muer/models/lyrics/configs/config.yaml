@@ -1,0 +1,41 @@
+lyrics:
+  tokenizer:
+    name: 'tiktoken'
+    pretrained_model: 'cl100k_base'
+    special_tokens:
+        - '<|ss_start|>'
+        - '<|ss_end|>'
+        - '<|ss_sep|>'
+        - '<|ss_pad|>'
+        - '<|ss_unk|>'
+        - '<|ss_mask|>'
+        - '<|ss_verse|>'
+        - '<|ss_chorus|>'
+        - '<|ss_bridge|>'
+        - '<|ss_prechorus|>'
+        - '<|ss_intro|>'
+        - '<|ss_outro|>'
+        - '<|ss_interlude|>'
+        - '<|ss_instrumental|>'
+        - '<|ss_solo|>'
+        - '<|ss_hook|>'
+        - '<|ss_refrain|>'
+        - '<|ss_coda|>'
+        - '<|ss_postchorus|>'
+        - '<|ss_prelude|>'
+        - '<|ss_stanza|>'
+        - '<|vo_ap|>'
+        - '<|vo_sp|>'
+    pad_token: '<|ss_pad|>'
+    sep_token: '<|ss_sep|>'
+    start_token: '<|ss_start|>'
+    end_token: '<|ss_end|>'
+    unknown_token: '<|ss_unk|>'
+    mask_token: '<|ss_mask|>'
+  song_structure_encoder:
+    dim: 512
+    num_layers: 8
+    num_heads: 8
+    dropout: 0.1
+    max_seq_len: 4096
+    hidden_dim: 2048

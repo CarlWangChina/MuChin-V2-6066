@@ -1,0 +1,3 @@
+{
+    "eslint.enable": true, // 开启eslint检查
+}

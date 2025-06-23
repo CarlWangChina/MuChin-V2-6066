@@ -1,0 +1,9 @@
+ama-prof-divi:
+  name: "ama-prof-divi"
+  description: "A comprehensive AI-based music generator."
+  version: "0.0.1"
+  training:
+    frozen_models:
+      - "ama-prof-divi.models.common.audioutils.audioutils"
+      - "ama-prof-divi.models.prompting.laion_clap_prompt_encoder"
+      - "ama-prof-divi.models.prompting.translators"

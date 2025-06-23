@@ -1,0 +1,1 @@
+DiT training code configured to work with data processed by a VAE, with the final output being WAV audio.

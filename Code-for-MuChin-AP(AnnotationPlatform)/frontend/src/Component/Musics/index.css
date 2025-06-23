@@ -1,0 +1,29 @@
+.music_item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.small_button {
+  width: 200px;
+  margin-right: 10px;
+}
+
+.music_name_h2 {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.refresh_btn {
+  width: 500px;
+}
+
+.music_list {
+  width: 1300px;
+}
+
+.total_sum {
+  width: 1300px;
+  margin-bottom: 30px;
+}

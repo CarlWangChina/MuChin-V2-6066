@@ -1,0 +1,10 @@
+data:
+  original:
+    audio_dir: '/nfs/data/datasets-mp3'
+    lyrics_dir: '/nfs/data/datasets-mp3-whisper-asr'
+    audio_suffix: '.mp3'
+    lyrics_suffix: '.txt'
+    approx_audio_file_num: 1750000
+    approx_lyrics_file_num: 750000
+  index:
+    index_dir: '/nfs/home/carl/data/outputs/music-dit/datasets-mp3-index'

@@ -1,0 +1,57 @@
+acoustic:
+  encodec:
+    name: "encodec"
+    pretrained_model: "facebook/encodec_48khz"
+    bandwidth: 12.0   # 3, 6, 12, 24
+  transformer:
+    window_size_in_seconds: 2
+    num_layers: 6
+    num_heads: 8
+    dropout: 0.1
+    max_seq_len: 480000
+    generation_mode: "sample_top_p"
+    top_p: 0.9
+    temperature: 0.6
+  context_encoder:
+    num_layers: 6
+    num_heads: 8
+    dropout: 0.0
+    melody_vocab_size: 128
+    melody_pad_id: 127
+    num_quantizers: 32
+  diffusion:
+    enabled: true
+    sampler:
+      name: "ddpm"
+      num_training_steps: 1000
+      num_inference_steps: 20
+      prediction_type: "v_prediction"
+    guidance_scale: 7.5
+    model_channels: 128
+    prompt_dim: 512
+    denoiser: "unet"
+    unet:
+      model_channels: ${..model_channels}
+      num_res_blocks: 2
+      attention_resolutions:
+        - 4
+        - 2
+        - 1
+      dropout: 0.1
+      channel_mult:
+        - 1
+        - 2
+        - 4
+        - 8
+      conv_resample: True
+      num_heads: 8
+      use_transformer: True
+      transformer_depth: 1
+      use_scale_shift_norm: False
+      res_block_updown: False
+      use_time_embedding: True
+    wavenet:
+      model_channels: ${..model_channels}
+      num_layers: 10
+      dilation_cycle: 4
+

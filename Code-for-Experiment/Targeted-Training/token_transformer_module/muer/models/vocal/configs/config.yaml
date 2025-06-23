@@ -1,0 +1,39 @@
+vocal:
+  vocoder:
+    name: "hifi-gan"
+    model_name: "nsf_hifigan"
+    pretrained_model_url: "https://ama-prof-divi-ai-public.s3.us-west-1.amazonaws.com/checkpoints/vocoders/nsf_hifigan_20221211_ama-prof-divi.zip"
+    pretrained_model_sha256: "7aff47d280bfcbf57134df7c3c96b2e33e615eceb1eb49cb754b0b464c8cd141"
+    use_pitch_embedding: true
+    harmonic_num: 8
+  fs2:
+    hidden_size: 384
+    num_encoder_layers: 4
+    num_decoder_layers: 4
+    kernel_size: 9
+    num_heads: 2
+    dropout: 0.1
+    num_speakers: 1
+    norm: "layer_norm"
+    padding: "same"
+    activation: "gelu"
+    duration_predictor:
+      layers: 5
+      kernel_size: 3
+    pitch_predictor:
+      layers: 5
+      kernel_size: 5
+    energy_predictor:
+      layers: 5
+      kernel_size: 5
+  diffusion:
+    enabled: true
+    sampler:
+      name: "ddpm"
+      num_training_steps: 1000
+      num_inference_steps: 20
+    denoiser: "wavenet"
+    wavenet:
+      model_channels: 256
+      num_layers: 20
+      dilation_cycle: 4

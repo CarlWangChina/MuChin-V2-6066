@@ -1,0 +1,5 @@
+torch
+opencc
+omegaconf==2.4.0.dev3
+g2p-en
+g2pm

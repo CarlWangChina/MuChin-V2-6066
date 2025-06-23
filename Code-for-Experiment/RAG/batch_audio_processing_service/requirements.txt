@@ -1,0 +1,21 @@
+torch
+torchaudio
+numpy
+scikit-learn
+tqdm
+accelerate
+einops
+omegaconf
+ffmpeg
+transformers==4.36.0
+sentencepiece
+pyloudnorm
+laion-clap
+tiktoken
+sacremoses
+librosa
+opencc-python-reimplemented
+ray[data,train,tune,serve]
+whisperx
+torchvision
+# deepspeed

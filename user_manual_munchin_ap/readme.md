@@ -1,0 +1,3 @@
+Contains user manuals, annotator organization details, and guidelines for the MuChin Annotation Platform (MuChin-AP).
+- **internal_plan_annotator_recruitment.docx:** Internal planning document outlining the strategy and proposal for recruiting annotators.
+- **internal_rules_annotator_payment.docx:** Internal document detailing the payment rules, quality check standards, and settlement process for annotators and QA staff.

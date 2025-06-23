@@ -1,0 +1,7 @@
+lyrics2phoneme:
+  pinyin2phoneme:
+    dict_file: "pinyin2phoneme.txt"
+  # special_token_pattern: "<\\|.*?\\|>"
+  special_token_pattern: "\\([A-Za-z]+\\d*\\)"
+  separators:  ["，", "。", "？", "：", "！", "；", ",", ".", ":", ";", "?", "!", "、", "/", "\\", "\r", "\n"]
+  spaces:  [" ", "　", "\t"]

@@ -1,0 +1,1 @@
+from .builder import build_vae2_trainer

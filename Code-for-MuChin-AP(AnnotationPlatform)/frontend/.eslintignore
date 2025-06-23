@@ -1,0 +1,10 @@
+/node_modules/*
+/config/*
+/scripts/*
+*.config.js
+jest.config.js
+jest.setup.js
+/src/utils/axios.js
+/src/App.test.js
+*.svg
+*.css

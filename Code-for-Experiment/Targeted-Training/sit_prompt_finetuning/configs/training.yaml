@@ -1,0 +1,35 @@
+training:
+  dataset:
+    data_folders:
+      wet_vocal_vae: "/nfs/datasets-mp3/zihao/vae-hifigan-latent"
+      dry_vocal_vae: 
+      clap:
+      lyrics: "/nfs/datasets-mp3/zihao/funasr-txt/carl-phoneme"
+      # lyrics are phoneme here! For example, "C.Q C.ING C.ZH C.U C.SH C.ENG C.L C.I C.G C.UO C.X C.IN C.CH C.UN"
+    dimensions:
+      wet_vocal_vae: "(512,)"
+      dry_vocal_vae: "(512,)"
+      clap: "(512,)"
+      lyrics: "(1,)"
+    data_types:
+      wet_vocal_vae: "float32"
+      dry_vocal_vae: "float32"
+      clap: "float32"
+      lyrics: "int32"
+    use_data_proportion: 1.0
+    train_proportion: 0.8
+    vocabulary: "./configs/phoneme_tokens.txt"
+  trainer:
+    checkpoint_dir: "/nfs/carl/dit/checkpoints"
+    cudnn_enabled: false
+    random_seed: 666
+    num_epochs: 2000
+    num_validation_steps: 20
+    checkpoint_interval: -1
+    validation_interval: 100
+    cuda_cache_cleanup_interval: 100
+    dataloader_num_workers: 0
+    max_vae_length: 1536  # About 4:20
+    max_lyrics_length: 4096
+    lyrics_dropout: 0.1
+    log_lyrics_length: false

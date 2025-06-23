@@ -1,0 +1,22 @@
+vae:
+  sampling_rate: 16000
+  num_channels: 1
+  chunk_stride: 180000
+  chunk_length: 192000
+  dim: 32
+  num_filters: 4
+  upsampling_ratios: [4, 4, 4, 2, 2, 2]
+  upsampling_kernel_sizes: [8, 8, 8, 4, 4, 4]
+  resblock_kernel_sizes: [3, 5, 7]
+  resblock_dilation_sizes: [[1, 3, 5], [1, 3, 5], [1, 3, 5]]
+  initial_kernel_size: 3
+  last_kernel_size: 15
+  activation: "LeakyReLU"
+  activation_params:
+    negative_slope: 0.1
+  final_activation_encoder: "Snake"
+  final_activation_decoder: "Tanh"
+  norm_type: "BatchNorm1d"
+  norm_params:
+  num_lstm_layers: 0
+  padding_mode: "reflect"

@@ -1,0 +1,57 @@
+.audio_content {
+  width: 1300px;
+  padding: 15px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  border-radius: 50px;
+  background-color: rgb(245, 247, 247);
+  
+  .play {
+    // background-color: red;
+    width: 100px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    // flex: 1;
+  }
+  .slider_content {
+    // background-color: aqua;
+    display: flex;
+    padding-right: 20px;
+    flex: 1;
+  }
+
+  .slider {
+    flex: 1;
+  }
+
+  .volume {
+    background-color: rgb(232, 234, 234);
+    padding: 20px;
+    border-radius: 25px;
+    // flex: 1;
+  }
+
+  .playRate {
+    background-color: rgb(232, 234, 234);
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 25px;
+  }
+
+  .player_tip {
+    padding-bottom: 20px;
+  }
+
+  audio::-webkit-media-controls-enclosure {
+    background: rgb(244, 247, 247);
+    margin-bottom: 20px;
+  }
+}
+.audio_content > span {
+  font-size: 20px;
+}

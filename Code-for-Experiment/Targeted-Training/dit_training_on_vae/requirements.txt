@@ -1,0 +1,5 @@
+torch
+deepspeed
+ama-prof-divi-common
+ama-prof-divi-text
+einops

@@ -1,0 +1,2 @@
+poems = {'ozymandias': None}
+gpt_2_lyrics = {'purpose': None, 'moonlight': None, 'count': None, 'kids': None, 'love': None, 'santa': None, 'christmas': None, 'lonely': None, 'call': None, 'wait': None, 'hiphop': None, 'king': None, 'time': None, 'blood': None, 'indie': None, 'sun': None, 'loner': None, 'late': None, 'beat': None, 'lost': None, 'pain': None, 'night': None, 'talk': None, 'again': None, 'dark': None, 'mirror': None, 'wife': None, 'forever': None, 'dots': None, 'darkness': None, 'alone': None, 'blade': None, 'reflection': None, 'hottub': None, 'safeAGI': None}

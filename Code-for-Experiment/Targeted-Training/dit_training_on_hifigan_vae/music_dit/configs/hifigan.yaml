@@ -1,0 +1,6 @@
+hifigan:
+  model_name: "nsf_hifigan"
+  pretrained_model_url: "https://ama-prof-divi-ai-public.s3.us-west-1.amazonaws.com/checkpoints/vocoders/nsf_hifigan_20221211_ama-prof-divi_new_pt.zip"
+  pretrained_model_sha256: "c52642634b6877365fb72d76271cf986a255849e42289ae056466bdcc372b1a7"
+  use_pitch_embedding: true
+  harmonic_num: 8

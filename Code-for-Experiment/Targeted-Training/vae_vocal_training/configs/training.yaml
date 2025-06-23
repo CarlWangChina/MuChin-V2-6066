@@ -1,0 +1,65 @@
+training:
+  dataset:
+    chunk_size: 192000
+    use_data_proportions: 1.0
+    train_proportion: 0.8
+    data_scaling_factor: 0.07
+  trainer:
+    checkpoint_dir: "/nfs/male/vae_32/checkpoints"
+    num_epochs: 300
+    discriminator_warmup_steps: 1000
+    num_validation_steps: 20
+    checkpoint_interval: 2000
+    validation_interval: 100
+    dataloader_num_workers: 4
+    cudnn_enabled: false
+    random_seed: 114514
+    kl_annealing_steps: 1500
+    dropout_rate: 0.3
+  loss_weights:
+    l1: 1.0
+    l2: 1.0
+    kld_annealing: 0.0
+    kld: 0.0
+    mel: 3.0
+    adv: 1.0
+    gen: 1.0
+    fm: 0.5
+    stft: 0.5
+    sisnr: 0.05
+  msspec:
+    range_start: 9
+    range_end: 14
+    n_mels: 64
+    f_min: 40.0
+    f_max: null
+    normalized: true
+    alphas: false
+    floor_level: 1e-5
+  adversarial:
+    adv_loss: "hinge"
+    feat_loss: "l1"
+    normalize: true
+  msstftd:
+    filters: 32
+    norm: "weight_norm"
+    n_ffts:
+      - 1024
+      - 2048
+      - 512
+      - 256
+      - 128
+    hop_lengths:
+      - 256
+      - 512
+      - 128
+      - 64
+      - 32
+    win_lengths:
+      - 1024
+      - 2048
+      - 512
+      - 256
+      - 128
+    activation: "LeakyReLU"
+    activation_params: {negative_slope: 0.3}

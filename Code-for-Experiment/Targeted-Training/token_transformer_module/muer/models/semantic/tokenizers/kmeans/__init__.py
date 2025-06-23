@@ -1,0 +1,2 @@
+from .melody_tokenizer import MelodyTokenizer as KMeansTokenizer
+import MelodyTokenizer as KMeansTokenizer

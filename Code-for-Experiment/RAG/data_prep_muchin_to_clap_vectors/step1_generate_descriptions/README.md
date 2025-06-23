@@ -1,0 +1,1 @@
+This script handles the initial data processing step of generating multiple descriptive texts from the source dataset.

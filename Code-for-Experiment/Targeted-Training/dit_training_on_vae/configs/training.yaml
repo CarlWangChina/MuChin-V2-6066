@@ -1,0 +1,40 @@
+training:
+  dataset:
+    meta_file: "/data/meta/song_list.csv"
+    data_files:
+      vae: "/data/packed-vae-24000-mono/vae_list_%d.dat"
+      clap: "/data/packed-clap-24000-mono/clap_list_%d.dat"
+      lyrics: "/data/packed-lyrics/lyric_list_%d.dat"
+    column_ids:
+      song_id: 1
+      node: 3
+      vae_offset: 10
+      vae_length: 11
+      clap_offset: 12
+      clap_length: 13
+      lyrics_offset: 14
+      lyrics_length: 15
+    dimensions:
+      vae: "(512,)"
+      clap: "(512,)"
+      lyrics: "(1,)"
+    data_types:
+      vae: "float32"
+      clap: "float32"
+      lyrics: "int32"
+    use_data_proportion: 1.0
+    train_proportion: 0.8
+  trainer:
+    checkpoint_dir: "/nfs/home/carl/data/outputs/dit/checkpoints"
+    cudnn_enabled: false
+    random_seed: 666
+    num_epochs: 2000
+    num_validation_steps: 20
+    checkpoint_interval: -1
+    validation_interval: 100
+    cuda_cache_cleanup_interval: 100
+    dataloader_num_workers: 4
+    max_vae_length: 1536  # About 4:20
+    max_lyrics_length: 4096
+    lyrics_dropout: 0.1
+    log_lyrics_length: false

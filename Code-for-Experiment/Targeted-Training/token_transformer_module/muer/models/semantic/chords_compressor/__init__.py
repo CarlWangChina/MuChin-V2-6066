@@ -1,0 +1,6 @@
+from .baseline import ChordsCompressorBaseline, ChordsDecompressorBaseline
+from .chords_compressor import ChordsCompressor
+from .chords_decompressor import ChordsDecompressor
+
+import chords_compressor
+import chords_decompressor

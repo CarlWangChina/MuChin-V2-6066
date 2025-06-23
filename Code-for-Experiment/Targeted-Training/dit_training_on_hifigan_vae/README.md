@@ -1,0 +1,1 @@
+DiT training code configured to work with data from a HiFiGAN+VAE pipeline, with the model's direct output being a Mel spectrogram.

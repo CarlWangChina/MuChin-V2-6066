@@ -1,0 +1,28 @@
+music_dit:
+  input_dim: 512
+  hidden_dim: 1536
+  context_dim: 1024
+  clap_dim: 512
+  vae_to_clap_ratio: 8
+  num_layers: 8
+  num_heads: 16
+  dropout: 0.1
+  use_causality: false
+  use_cross_attention: true
+  use_rpr: true
+  pos_embedding: "RoPE"
+  max_position: 10000
+  use_learned_variance: false
+  sampler:
+    beta_start: 1e-4
+    beta_end: 0.02
+    beta_schedule: "linear"
+    timestep_spacing: "trailing"
+    num_training_timesteps: 500
+    num_inference_timesteps: 20
+    dynamic_thresholding_ratio: 0.995
+    clip_sample_range: null
+  loss:
+    loss_type: "mse"
+    mse_loss_weight: 1.0
+    vb_loss_weight: 1.0

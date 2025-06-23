@@ -1,0 +1,43 @@
+hifigan:
+  v1:
+    version: "v1"
+    resblock: "1"
+    upsampling_rates: [ 8, 8, 2, 2 ]
+    upsampling_kernel_sizes: [ 16, 16, 4, 4 ]
+    upsampling_initial_channel: 512
+    resblock_kernel_sizes: [ 3, 7, 11 ]
+    resblock_dilation_sizes: [ [ 1,3,5 ], [ 1,3,5 ], [ 1,3,5 ] ]
+  v2:
+    version: "v2"
+    resblock: "1"
+    upsampling_rates: [ 8, 8, 2, 2 ]
+    upsampling_kernel_sizes: [ 16, 16, 4, 4 ]
+    upsampling_initial_channel: 128
+    resblock_kernel_sizes: [ 3, 7, 11 ]
+    resblock_dilation_sizes: [ [ 1,3,5 ], [ 1,3,5 ], [ 1,3,5 ] ]
+  v3:
+    version: "v3"
+    resblock: "2"
+    upsampling_rates: [ 8, 8, 4 ]
+    upsampling_kernel_sizes: [ 16, 16, 8 ]
+    upsampling_initial_channel: 256
+    resblock_kernel_sizes: [ 3, 5, 7 ]
+    resblock_dilation_sizes: [ [ 1,2 ], [ 2,6 ], [ 3,12 ] ]
+  v1_large:
+    version: "v1_large"
+    resblock: "1"
+    upsampling_rates: [ 4, 4, 2, 2, 2, 2 ]
+    upsampling_kernel_sizes: [ 16, 16, 4, 4, 4, 4 ]
+    upsampling_initial_channel: 2048
+    resblock_kernel_sizes: [ 3, 7, 11, 15 ]
+    resblock_dilation_sizes: [ [ 1,3,5 ], [ 1,3,5 ], [ 1,3,5 ], [ 1,3,5 ] ]
+mel_default:
+  sampling_rate: 24000
+  n_fft: 1024
+  win_length: 1024
+  hop_length: 256
+  n_mels: 160
+  f_min: 40
+  f_max: 8000
+  min_value: 1e-5
+  scale: 1.0

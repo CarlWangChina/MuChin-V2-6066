@@ -1,0 +1,33 @@
+name: Sync Tags to Codeup
+
+on:
+  push:
+    tags:
+      - '*'  # 监控所有标签的创建事件
+  workflow_dispatch:  # 手动触发
+
+jobs:
+  sync-tags:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Add Codeup remote
+      env:
+        ACCESS_TOKEN: ${{ secrets.CODEUP_TOKEN }}
+      run: |
+        git remote add codeup https://wangji:$ACCESS_TOKEN@codeup.aliyun.com/6616010758b06f87bcc6ab0f/ama-prof-divi-functions/dwd_clap_whisper.git
+        git config --global user.name "wangji"
+        git config --global user.email "wangji@ama-prof-divi.ai"
+        
+    - name: Debug Dir
+      run: ls -la
+
+    - name: Push tags to Codeup
+      env:
+        ACCESS_TOKEN: ${{ secrets.CODEUP_TOKEN }}
+      run: |
+        git fetch --unshallow origin
+        git push codeup --tags

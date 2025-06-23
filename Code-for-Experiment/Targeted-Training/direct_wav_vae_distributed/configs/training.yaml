@@ -1,0 +1,79 @@
+training:
+  dataset:
+    table_name: "dwd.dwd_sourcefile_uniq_no_score_v1"
+    columns: [ "obj_id", "filename", "duration" ]
+    num_blocks: 1024
+    prefetch_factor: 16
+    minio_part_size: 20971520
+    use_data_proportions: 1.0
+    train_proportion: 0.995
+  trainer:
+    checkpoint_dir: "/data/checkpoints/vae2"
+    num_epochs: 300
+    discriminator_warmup_steps: 1000
+    num_validation_steps: -1
+    checkpoint_interval: 500
+    validation_interval: 100
+    dataloader_num_workers: 64
+    cudnn_enabled: false
+    random_seed: 666
+    kl_annealing_steps: 1000
+    dropout_rate: 0.3
+    torch_profiler:
+      enabled: false
+      record_shapes: false
+      profile_memory: true
+      with_stack: false
+      schedule:
+        skip_first: 10
+        wait: 1
+        warmup: 1
+        active: 3
+        repeat: 1
+  loss_weights:
+    l1: 1.0
+    l2: 0.5
+    kld_annealing: 0.02
+    kld: 0.5
+    mel: 1.0
+    adv: 1.0
+    gen: 1.0
+    fm: 1.0
+    stft: 0.5
+    sisnr: 0.05
+  msspec:
+    range_start: 9
+    range_end: 14
+    n_mels: 64
+    f_min: 40.0
+    f_max: null
+    normalized: true
+    alphas: false
+    floor_level: 1e-5
+  adversarial:
+    adv_loss: "hinge"
+    feat_loss: "l1"
+    normalize: true
+  msstftd:
+    filters: 32
+    norm: "weight_norm"
+    n_ffts:
+      - 1024
+      - 2048
+      - 512
+      - 256
+      - 128
+    hop_lengths:
+      - 256
+      - 512
+      - 128
+      - 64
+      - 32
+    win_lengths:
+      - 1024
+      - 2048
+      - 512
+      - 256
+      - 128
+    activation: "LeakyReLU"
+    activation_params: { negative_slope: 0.3 }

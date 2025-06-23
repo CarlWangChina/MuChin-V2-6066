@@ -1,0 +1,14 @@
+.card {
+  text-align: center;
+  padding: 20px;
+  margin: 30px;
+  width: 1000px;
+}
+
+#login_account {
+  background-color: white;
+}
+
+#login_password {
+  background-color: white;
+}

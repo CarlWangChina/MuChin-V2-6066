@@ -1,0 +1,18 @@
+.head-row {
+    padding: 16px 0px;
+    margin-bottom: 20px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    height: 10%;
+    width: 1300px;
+}
+
+.user_name {
+    margin-bottom: 0;
+    margin-right: 30px;
+}
+
+.logout_btn {
+    margin-right: 10px;
+}

@@ -1,0 +1,36 @@
+acoustic_tokenizer:
+  parallelism:
+    dist_backend: 'gloo'
+    master_addr: 'localhost'
+    master_port: 29501
+  target_loudness: -12.0
+  window_size: 300
+  exclude_vocals: false
+  data_source:
+    data_control_files:
+      - "data_control_files/music-type-checked.txt"
+      - "data_control_files/music-type-checked-1087.txt"
+      - "data_control_files/music-type-checked-cb-unique.txt"
+      - "data_control_files/music-type-checked-dyqy.txt"
+    source_dir:
+    use_absolute_path: true
+    source_file_postfix:
+      - "_src.wav"
+      - "_src.mp3"
+  target:
+    target_dir: "/export/data/acoustic-tokenizer-out"
+    states_dir: "/export/data/acoustic-tokenizer-out/states"
+    target_file_postfix: ".pt"
+    group_size: 10000
+
+add_clap:
+  data_dir: "/nfs/acoustic-tokenizer-snr-full"
+  ref_dir: "/nfs/snr_wav-2track/yc"
+  data_file_pattern: "**/*.mpg_yc.pt"
+  ref_file_pattern: "**/*.mpg_yc.wav"
+  file_id_regex: "(.*)\\.mpg_yc"
+  target_loudness: -12.0
+  parallelism:
+    dist_backend: 'gloo'
+    master_addr: 'localhost'
+    master_port: 29502

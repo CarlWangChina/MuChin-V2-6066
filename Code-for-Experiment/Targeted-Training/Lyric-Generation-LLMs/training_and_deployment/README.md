@@ -1,0 +1,1 @@
+A complete pipeline for training the lyric generation model and deploying it as a service.

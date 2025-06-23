@@ -1,0 +1,18 @@
+.player {
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // height: 60px;
+  width: 1300px;
+  // text-align: center;
+  margin-bottom: 30px;
+
+  .player_tip{
+    padding-bottom: 20px;
+  }
+
+  audio::-webkit-media-controls-enclosure {
+    background: rgb(244, 247, 247);
+    margin-bottom: 20px;
+  }
+}

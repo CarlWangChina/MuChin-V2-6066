@@ -1,0 +1,70 @@
+# line head marks for different types of washing.
+# lhms = [
+#     '$D-------| '  ->  1 Confident deletion
+#     '!D011----| '  ->  2 Suspicious deletion
+#     '$M-------| '  ->  3 Confident modification
+#     '!M123----| '  ->  4 Suspicious modification
+#     '$A-------| '  ->  5 Confident addition
+#     '!A001----| '  ->  6 Suspicious addition
+# ]
+
+# '有没有人告诉你'                 ---> (0, Empty_String, None, '有没有人告诉你')
+# '[al:稻花香]'                   ---> (1, LRC_TAG(ID), None, None)
+
+# '念白 : 黑牛肉249两'         ---> (2, LRC_TAG(TS or ES), ['0', '念白 : '], None)
+# '邢香子：'                  ---> (2, LRC_TAG(TS or ES), ['0', '邢香子：'], None)
+# 'sia星雅:谁弹的琵琶相送'    ---> (2, LRC_TAG(TS or ES), ['0', 'sia星雅 :'], None)
+# '未经许可，不得翻唱或使用' ---> (2, LRC_TAG(TS or ES), ['1', '未经许可，不'], None)
+# '【该歌曲已获得原词曲版权授权】'---> (2, LRC_TAG(TS or ES), ['1', '版权', '授权'], None)
+
+# '[00:36.369] 送走-繁體,迎簡體 '---> (3, LRC_TAG(TS or ES), None, '送走繁体迎简体')
+
+# '合(D):爱你的情绪'     ---> (4, LRC_TAG(TS or ES), ['2', '合(D):'], '爱你的情绪')
+# 'F(M)：'                      ---> (4, LRC_TAG(TS or ES), ['2', 'F(M)：'], '')
+# 'verse1 : mama'        ---> (4, LRC_TAG(TS or ES), ['3', 'verse1 : '], 'mama')
+# '[副歌2 | '                  ---> (4, LRC_TAG(TS or ES), ['3', '[副歌2 |'], '')
+# '你说:“没有关系，'      ---> (4, LRC_TAG(TS or ES), ['4', '说:“'], '你说没有关系')
+
+
+finish Cleaner:
+1. add 'log_generate_root_path' in constructor
+2. add 'log_file_name or taskid' params for wash_lrc_4xxx()
+3. add feature to generate log file depend on above
+
+user input -> russell's emotion
+
+refactor data folder by NEW_README.txt
+put in lyric generate logic from project 'openai-quickstart-python' and chain it
+with Cleaner
+
+
+p>      p>      p>          
+c> -       -       -       -
+        c> -       -       -
+                c> +    p> +
+                        c> +/-
+
+
+
+p>
+c> +    p> +       +       +       +       +
+        c> +    p> +    p> +    p> +       +
+                c> -       -       -       -
+                        c> -       -       -
+                                c> +    p> +
+                                        c> +/-
+
+
+
+
+   ?       ?
+p> +       +
+c> +    p> +
+        c> +
+
+
+
+  +          +
+  +          +
+p>+        p>+
+c>-          -

@@ -1,0 +1,1 @@
+Scripts for running ASR tasks (using FunASR and Whisper) in a distributed manner across multiple machines.

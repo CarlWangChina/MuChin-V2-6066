@@ -1,0 +1,1 @@
+A Transformer-based module designed to convert tokens from a Large Language Model (LLM) into tokens suitable for a diffusion model.

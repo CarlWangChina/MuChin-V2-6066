@@ -1,0 +1,3 @@
+Workflow and scripts for annotating a large dataset of 1.5 million songs with lyrics using Whisper ASR.
+- **log_20240512_whisper_issues.xlsx:** Log file from May 12, detailing issues found with Whisper ASR, focusing on timestamps and model hallucinations.
+- **log_20240514_whisper_regex_cleaning.xlsx:** Log file from May 14, documenting the data cleaning process using regular expressions on Whisper ASR output.

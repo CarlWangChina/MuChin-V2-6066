@@ -1,0 +1,14 @@
+prompting:
+  encoder:
+    name: "laion_clap"
+    pretrained_model: "music_audioset_epoch_15_esc_90.14.pt"
+    pretrained_model_url: "https://ama-prof-divi-ai-public.s3.us-west-1.amazonaws.com/checkpoints/laion-clap/music_audioset_epoch_15_esc_90.14.pt"
+    pretrained_model_sha256: "12ac462a1973203fe9a1c47bdccac26523d57949b1ab8e36d6e6ecfe867eb898"
+    amodel: "HTSAT-base"
+    tmodel: "roberta"
+    enable_fusion: false
+  translator:
+    zh_en:
+      pretrained_model: "Helsinki-NLP/opus-mt-zh-en"
+    en_zh:
+      pretrained_model: "Helsinki-NLP/opus-mt-en-zh"

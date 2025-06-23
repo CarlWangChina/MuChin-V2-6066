@@ -1,0 +1,19 @@
+# syntax=docker/dockerfile:1
+
+FROM python:3.8.19-alpine
+
+RUN <<EOF
+    python -m pip install pika --upgrade
+EOF
+
+WORKDIR /
+
+RUN mkdir -p /mqtest
+COPY ./sv_src/mqc_helper.py /mqtest/mqc_helper.py
+COPY ./sv_src/result_pub.py /mqtest/result_pub.py
+COPY ./sv_src/infere_sub.py /mqtest/infere_sub.py
+COPY ./sv_src/app.py /mqtest/app.py
+
+WORKDIR /mqtest
+
+CMD python app.py

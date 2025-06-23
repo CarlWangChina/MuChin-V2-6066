@@ -1,0 +1,2 @@
+class LlmBadReturn(Exception):
+    pass

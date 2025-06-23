@@ -1,0 +1,74 @@
+vae:
+  sampling_rate: 44100
+  num_channels: 2
+  embedding_dim: 32
+  num_filters: 32
+  num_residual_layers: 1
+  chunk_length: 46080
+  chunk_stride: 43776
+  normalize_loudness: True
+  input_loudness: -12.0
+  output_loudness: -16.0
+  norm_type: "time_group_norm"
+  kernel_size: 7
+  last_kernel_size: 7
+  residual_kernel_size: 3
+  causal: False
+  pad_mode: "reflect"
+  compress: 2
+  num_lstm_layers: 2
+  trim_right_ratio: 1.0
+  upsampling_ratios:
+    - 8
+    - 5
+    - 4
+    - 4
+    - 2
+  training:
+    loss_weights:
+      adv: 4.0
+      feat: 4.0
+      l1: 1.0
+      msspec: 2.0
+      sisnr: 1.0
+    loss_balancer:
+      balance_grads: true
+      ema_decay: 0.999
+      per_batch_item: true
+      total_norm: 1.0
+    msspec:
+      range_start: 9
+      range_end: 14
+      n_mels: 64
+      f_min: 40.0
+      f_max: null
+      normalized: true
+      alphas: false
+      floor_level: 1e-5
+    adversarial:
+      adv_loss: "hinge"
+      feat_loss: "l1"
+      normalize: true
+    msstftd:
+      filters: 32
+      norm: "weight_norm"
+      n_ffts:
+        - 1024
+        - 2048
+        - 512
+        - 256
+        - 128
+      hop_lengths:
+        - 256
+        - 512
+        - 128
+        - 64
+        - 32
+      win_lengths:
+        - 1024
+        - 2048
+        - 512
+        - 256
+        - 128
+      activation: "LeakyReLU"
+      activation_params: {negative_slope: 0.3}

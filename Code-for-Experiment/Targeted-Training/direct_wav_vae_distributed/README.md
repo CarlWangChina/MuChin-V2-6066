@@ -1,0 +1,1 @@
+An implementation of a VAE that generates WAV audio directly without an intermediate Mel spectrogram stage, configured for large-scale distributed training using MPI.
