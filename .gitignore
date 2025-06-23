@@ -35,6 +35,9 @@ ENV/
 env.bak/
 venv.bak/
 
+# VS Code
+.vscode/
+
 # Mac-specific
 .DS_Store
 
@@ -46,4 +49,3 @@ combined_readmes.txt
 # Other common ignores
 .pytest_cache/
 .mypy_cache/
-.vscode/
