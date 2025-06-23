@@ -4,7 +4,7 @@ from setuptools import setup
 NAME = 'demucs'
 DESCRIPTION = 'Music source separation in the waveform domain.'
 URL = 'https://github.com/facebookresearch/demucs'
-EMAIL = 'defossez@fb.com'
+EMAIL = 'carlwang1212@gmail.com'
 AUTHOR = 'Alexandre Défossez'
 REQUIRES_PYTHON = '>=3.8.0'
 

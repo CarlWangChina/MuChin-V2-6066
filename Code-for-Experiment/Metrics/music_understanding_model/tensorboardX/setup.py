@@ -51,7 +51,7 @@ setup(
     description='TensorBoardX lets you watch Tensors Flow without Tensorflow',
     long_description=history,
     author='Tzu-Wei Huang',
-    author_email='huang.dexter@gmail.com',
+    author_email='carlwang1212@gmail.com',
     url='https://github.com/lanpa/tensorboardX',
     packages=['tensorboardX'],
     include_package_data=True,
