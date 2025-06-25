@@ -170,7 +170,7 @@ The dataset is available in two main versions. **Note:** Some data files contain
 
 #### Component Models
 
-For the reproducibility of specific modules discussed in our paper, we provide the fine-tuned weights for our CLAP-based retrieval model and the Qwen-based lyric generation model. These are available at our Hugging Face Model repository:
+For the reproducibility of specific modules discussed in our paper, we provide the fine-tuned weights for our CLAP-based retrieval model and other models. These are available at our Hugging Face Model repository:
 `huggingface.co/karl-wang/ama-prof-divi`
 
 ---
