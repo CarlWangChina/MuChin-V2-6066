@@ -1,1 +1,0 @@
-Scripts for cleaning and preprocessing lyric data in parallel to accelerate the workflow.
