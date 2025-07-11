@@ -1,17 +1,20 @@
-# MuChin-V2-6066-ama-prof-divi: An Analytical Framework for the Amateur-Professional Semantic Divide in Music
+# How the amateur-professional divide in musical language biases generative AI
 
-This repository provides the experimental code and resources related to our research on the "Amateur-Professional Semantic Divide" in AI music generation. Our work explores how differing vocabularies and conceptual frameworks between amateur and professional users impact text-to-music systems.
+This repository contains the dataset, code, and resources for the paper "How the amateur-professional divide in musical language biases generative AI". Our research leverages generative AI as a novel computational lens to provide a large-scale, quantitative analysis of the cognitive and linguistic divide between experts (professionals) and novices (amateurs) in the domain of music.
 
-The core of our research is the **MuChin Dataset**, a large-scale corpus designed specifically to capture and quantify this descriptive divide.
+The empirical foundation of this research is the **MuChin Dataset**, a large-scale corpus specifically constructed to capture and quantify this descriptive divide.
 
 ---
 
 ### Key Features & Contributions
 
--   **Dataset Curation**: Introduction of the MuChin dataset, featuring paired descriptions from both amateur and professional perspectives for thousands of musical pieces.
--   **Semantic Gap Analysis**: Code and methodologies to quantitatively analyze the linguistic and semantic differences between user groups.
--   **Generative Model Probing**: A framework for evaluating how existing text-to-music generation systems respond to diverse descriptive styles.
--   **Mitigation Strategies**: Explores foundational techniques to bridge the semantic gap, such as Retrieval-Augmented Generation (RAG) and targeted data training.
+-   **A Novel Dataset for Cognitive Science**: The MuChin dataset, featuring paired descriptions from both amateur and professional perspectives for thousands of musical pieces.
+
+-   **Computational Analysis of the Divide**: Methodologies and code to quantitatively analyze the linguistic and semantic differences between user groups.
+
+-   **Probing AI with Human Language**: A framework to test how generative models respond to different human linguistic patterns.
+
+-   **AI-driven Interventions**: Code for exploring interventions (e.g., RAG, targeted training) designed to bridge the human-AI communication gap.
 
 ---
 
@@ -22,13 +25,13 @@ This repository maintains a comprehensive structure containing all related scrip
 -   **/Datasets-for-MuChin-V2/**: Contains data samples, metadata, and detailed documentation about the MuChin dataset. The full audio and database files are hosted externally.
 
 -   **/Code-for-Experiment/**: The central hub for our experimental code. It is organized into the following key areas:
-    -   **/Metrics/**: Implementations for evaluating model outputs. This includes code for assessing the alignment between user prompts and generated audio (**Intent Fidelity Metrics** like SAA, ARA), lyric quality (**Lyric Evaluation Metrics**), and our core **Semantic Similarity** analysis tools.
+    -   **/Metrics/**: Implementations for evaluating model outputs. This includes our primary **Semantic Similarity** analysis tools used to quantify the descriptive divide, as well as metrics for assessing the downstream impact on AI behaviour, such as **Intent Alignment** (SAA, ARA).
     -   **/RAG/**: Our implementation of a Retrieval-Augmented Generation system, focusing on a CLAP-based text-to-audio retrieval pipeline to enhance prompt understanding. Key components include data preparation, vector search frontend, and audio processing utilities.
     -   **/Targeted-Training/**: Contains various scripts and configurations for model training. This includes reference implementations for different architectures and tools like **NVIDIA Apex** for high-performance mixed-precision training.
 
 -   **/Code-for-MuChin-AP/**: The complete source code for our custom-built data annotation platform, **MuChin-AP**.
 
--   `/user_manual_munchin_ap/`: Documentation, guidelines, and internal planning documents related to the annotation platform and process.
+-   **/user_manual_munchin_ap/**: Documentation, guidelines, and internal planning documents related to the annotation platform and process.
 
 ---
 
@@ -57,7 +60,7 @@ This repository maintains a comprehensive structure containing all related scrip
         pip install -U FlagEmbedding
         pip install transformers==4.34.0
         ```
-    - **NVIDIA Apex (for advanced training)**: For performance and full functionality, we recommend installing Apex with CUDA and C++ extensions:
+    -   **NVIDIA Apex (for advanced training)**: For performance and full functionality, we recommend installing Apex with CUDA and C++ extensions:
         ```bash
         # Navigate to the apex directory
         cd Code-for-Experiment/Metrics/music_understanding_model/apex
@@ -170,7 +173,7 @@ The dataset is available in two main versions. **Note:** Some data files contain
 
 #### Component Models
 
-For the reproducibility of specific modules discussed in our paper, we provide the fine-tuned weights for our CLAP-based retrieval model and other models. These are available at our Hugging Face Model repository:
+To ensure the full reproducibility of our findings, we provide the fine-tuned model weights used in our intervention experiments (e.g., for the RAG system). These are available at our Hugging Face Model repository:
 `huggingface.co/karl-wang/ama-prof-divi`
 
 ---
