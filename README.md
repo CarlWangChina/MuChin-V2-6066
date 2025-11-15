@@ -181,3 +181,17 @@ To ensure the full reproducibility of our findings, we provide the fine-tuned mo
 ### License
 
 This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+## Citation
+If you use the MuChin benchmark or dataset in your research, please cite our paper:
+```
+@inproceedings{wang2024muchin,
+  title     = {MuChin: A Chinese Colloquial Description Benchmark for Evaluating Language Models in the Field of Music},
+  author    = {Wang, Zihao and Li, Shuyu and Zhang, Tao and Wang, Qi and Yu, Pengfei and Luo, Jinyang and Liu, Yan and Xi, Ming and Zhang, Kejun},
+  booktitle = {Proceedings of the Thirty-Third International Joint Conference on
+               Artificial Intelligence},
+  pages     = {7771--7779},
+  year      = {2024},
+  month     = {8},
+}
+
