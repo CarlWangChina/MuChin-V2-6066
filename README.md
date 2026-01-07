@@ -1,28 +1,28 @@
-
-# Dataset & Available Resources
-
+## V2 Audio Dataset & Available Resources
+The 6,066 audio WAV files for this dataset, along with the corresponding text annotations for professional descriptions, amateur descriptions, musical segment structure, rhymes, and more, have been uploaded to Hugging Face. Feel free to download them. Scholars and researchers are requested to obtain relevant song audio from legal channels and use it for academic purposes only. Song audio cannot be used for commercial model training without the authorization of the copyright holder.
 The dataset is available in two main versions. **Note:** Some data files contain Chinese characters. Please ensure you open them with UTF-8 encoding to prevent garbled text.
 
--   **MuChin 6066 (Full Dataset)**
+-   **MuChinV2 6066 (Full Dataset)**
     The second, larger release contains 6,066 unique songs and all associated annotations.
     -   **Audio + Annotations (`.tar.bz2`)**:
-        -   **Github:** `https://github.com/CarlWangChina/MuChin-V2-6066`
-        -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin-v2-6066`
-        -   **Baidu Netdisk:** `pan.baidu.com/s/1GP5p3Ip_j0MraAcA52gIuQ` (Password: `68c1`)
-    -   **Database File (Metadata & Annotations, No Audio)**:
-        -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin-v2-6066`
+        -   **Github:** [https://github.com/CarlWangChina/MuChin-V2-6066](https://github.com/CarlWangChina/MuChin-V2-6066)
+        -   **Hugging Face:** [huggingface.co/datasets/karl-wang/MuChin-v2-6066](https://huggingface.co/datasets/karl-wang/MuChin-v2-6066)
+        -   **Baidu Netdisk:** [pan.baidu.com/s/1GP5p3Ip_j0MraAcA52gIuQ](https://pan.baidu.com/s/1GP5p3Ip_j0MraAcA52gIuQ) (Password: `68c1`)
+    -   **Database File**:
+        -   **Hugging Face:** [huggingface.co/datasets/karl-wang/MuChin-v2-6066](https://huggingface.co/datasets/karl-wang/MuChin-v2-6066)
 
 
--   **MuChin 1000**
+-   **MuChinV1 1000**
     This initial set contains 1,000 audio tracks with detailed text annotations.
-    -   **Github:** `https://github.com/CarlWangChina/MuChin`
-    -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin1k`
-    -   **Baidu Netdisk:** `pan.baidu.com/s/1D4xGQhYUwWbpaHyAS71dfw` (Password: `1234`)
-
+    -   **Github:** [https://github.com/CarlWangChina/MuChin](https://github.com/CarlWangChina/MuChin)
+    -   **Hugging Face:** [huggingface.co/datasets/karl-wang/MuChin1k](https://huggingface.co/datasets/karl-wang/MuChin1k)
+    -   **Baidu Netdisk:** [pan.baidu.com/s/1D4xGQhYUwWbpaHyAS71dfw](https://pan.baidu.com/s/1D4xGQhYUwWbpaHyAS71dfw) (Password: `1234`)
 
 ## Citation
+We invite scholars and researchers to employ this resource broadly in their research initiatives. Proper reference to its use in academic publications is appreciated.
 If you use the MuChin benchmark or dataset in your research, please cite our paper:
-bibtex```
+#### BibTeX
+```bibtex
 @inproceedings{wang2024muchin,
   title     = {MuChin: A Chinese Colloquial Description Benchmark for Evaluating Language Models in the Field of Music},
   author    = {Wang, Zihao and Li, Shuyu and Zhang, Tao and Wang, Qi and Yu, Pengfei and Luo, Jinyang and Liu, Yan and Xi, Ming and Zhang, Kejun},
@@ -33,9 +33,6 @@ bibtex```
   month     = {8},
 }
 ```
-
-
-
 
 # How the amateur-professional divide in musical language biases generative AI
 
