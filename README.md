@@ -1,3 +1,42 @@
+
+# Dataset & Available Resources
+
+The dataset is available in two main versions. **Note:** Some data files contain Chinese characters. Please ensure you open them with UTF-8 encoding to prevent garbled text.
+
+-   **MuChin 6066 (Full Dataset)**
+    The second, larger release contains 6,066 unique songs and all associated annotations.
+    -   **Audio + Annotations (`.tar.bz2`)**:
+        -   **Github:** `https://github.com/CarlWangChina/MuChin-V2-6066`
+        -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin-v2-6066`
+        -   **Baidu Netdisk:** `pan.baidu.com/s/1GP5p3Ip_j0MraAcA52gIuQ` (Password: `68c1`)
+    -   **Database File (Metadata & Annotations, No Audio)**:
+        -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin-v2-6066`
+
+
+-   **MuChin 1000**
+    This initial set contains 1,000 audio tracks with detailed text annotations.
+    -   **Github:** `https://github.com/CarlWangChina/MuChin`
+    -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin1k`
+    -   **Baidu Netdisk:** `pan.baidu.com/s/1D4xGQhYUwWbpaHyAS71dfw` (Password: `1234`)
+
+
+## Citation
+If you use the MuChin benchmark or dataset in your research, please cite our paper:
+bibtex```
+@inproceedings{wang2024muchin,
+  title     = {MuChin: A Chinese Colloquial Description Benchmark for Evaluating Language Models in the Field of Music},
+  author    = {Wang, Zihao and Li, Shuyu and Zhang, Tao and Wang, Qi and Yu, Pengfei and Luo, Jinyang and Liu, Yan and Xi, Ming and Zhang, Kejun},
+  booktitle = {Proceedings of the Thirty-Third International Joint Conference on
+               Artificial Intelligence},
+  pages     = {7771--7779},
+  year      = {2024},
+  month     = {8},
+}
+```
+
+
+
+
 # How the amateur-professional divide in musical language biases generative AI
 
 This repository contains the dataset, code, and resources for the paper "How the amateur-professional divide in musical language biases generative AI". Our research leverages generative AI as a novel computational lens to provide a large-scale, quantitative analysis of the cognitive and linguistic divide between experts (professionals) and novices (amateurs) in the domain of music.
@@ -144,28 +183,10 @@ The repository contains code for training and evaluating various models. A key u
 
 ---
 
-### Dataset & Available Resources
-
-#### MuChin Dataset Releases
-
-The dataset is available in two main versions. **Note:** Some data files contain Chinese characters. Please ensure you open them with UTF-8 encoding to prevent garbled text.
-
--   **MuChin 1000**
-    This initial set contains 1,000 audio tracks with detailed text annotations.
-    -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin1k`
-    -   **Baidu Netdisk:** `pan.baidu.com/s/1D4xGQhYUwWbpaHyAS71dfw` (Password: `1234`)
-
--   **MuChin 6066 (Full Dataset)**
-    The second, larger release contains 6,066 unique songs and all associated annotations.
-    -   **Audio + Annotations (`.tar.bz2`)**:
-        -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin-v2-6066`
-        -   **Baidu Netdisk:** `pan.baidu.com/s/1GP5p3Ip_j0MraAcA52gIuQ` (Password: `68c1`)
-    -   **Database File (Metadata & Annotations, No Audio)**:
-        -   **Hugging Face:** `huggingface.co/datasets/karl-wang/MuChin-v2-6066`
 
 #### Important Usage Notes
 
-1.  **Timestamp Discrepancy**: The primary focus of manual annotation was on descriptive and structural content, not timestamp correction. For the most accurate available timestamps, please use the `raw_lyric` files. The timestamps in `tknz_json` files are incorrect due to manual merging and splitting of lyric lines during annotation.
+1.  **Timestamp Discrepancy**: The primary focus of this paper's manual annotation was on descriptive and structural content, not timestamp correction. For the most accurate available timestamps, please use the `raw_lyric` files. The timestamps in `tknz_json` files are incorrect due to manual merging and splitting of lyric lines during annotation.
 
 2.  **Duplicate Annotations**: Due to an operational error, 724 songs from the initial `MuChin 1000` release were annotated a second time. We recommend using the annotation results from the `MuChin 1000` directory for these specific songs. A list of these duplicates can be found in `muchin_5790_1000_overlap.jsonl`.
 
@@ -177,21 +198,4 @@ To ensure the full reproducibility of our findings, we provide the fine-tuned mo
 `huggingface.co/karl-wang/ama-prof-divi`
 
 ---
-
-### License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
-## Citation
-If you use the MuChin benchmark or dataset in your research, please cite our paper:
-```
-@inproceedings{wang2024muchin,
-  title     = {MuChin: A Chinese Colloquial Description Benchmark for Evaluating Language Models in the Field of Music},
-  author    = {Wang, Zihao and Li, Shuyu and Zhang, Tao and Wang, Qi and Yu, Pengfei and Luo, Jinyang and Liu, Yan and Xi, Ming and Zhang, Kejun},
-  booktitle = {Proceedings of the Thirty-Third International Joint Conference on
-               Artificial Intelligence},
-  pages     = {7771--7779},
-  year      = {2024},
-  month     = {8},
-}
 
