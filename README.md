@@ -18,6 +18,10 @@ The dataset is available in two main versions. **Note:** Some data files contain
     -   **Hugging Face:** [huggingface.co/datasets/karl-wang/MuChin1k](https://huggingface.co/datasets/karl-wang/MuChin1k)
     -   **Baidu Netdisk:** [pan.baidu.com/s/1D4xGQhYUwWbpaHyAS71dfw](https://pan.baidu.com/s/1D4xGQhYUwWbpaHyAS71dfw) (Password: `1234`)
 
+<img width="3030" height="1194" alt="ScreenShot_2026-01-07_135700_449" src="https://github.com/user-attachments/assets/662f4e51-8a8f-42ae-b01e-992d5ab770dd" />
+
+The MuChin dataset was constructed through the custom-built MuChin Music Annotation Platform (MMAP), utilizing a multi-stage, collaborative annotation process that engaged both amateur enthusiasts and professionals to capture diverse linguistic perspectives on music. Each musical piece was subjected to thorough annotations, including descriptive labels, structural segmentation (such as verses and choruses), and rhyme schemes, ensuring high-quality, semantically rich descriptions grounded in colloquial Chinese language. A subset of 1,000 songs has been publicly released as the first open-source benchmark for evaluating multimodal large language models' ability to understand and describe music in line with human perception. Additionally, the full collection of 6,066 songs is available for public use, providing an extensive resource for instruction fine-tuning and alignment training of music-oriented large models.
+
 ## Citation
 We invite scholars and researchers to employ this resource broadly in their research initiatives. Proper reference to its use in academic publications is appreciated.
 If you use the MuChin benchmark or dataset in your research, please cite our paper:
